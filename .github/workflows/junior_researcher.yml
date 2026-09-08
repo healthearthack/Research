@@ -1,0 +1,50 @@
+name: Junior Researcher Agent
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Runs every Monday at 6:00 AM UTC
+  workflow_dispatch:     # Allows 1-click manual trigger from GitHub Actions tab
+
+jobs:
+  research-scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Junior Researcher Scanner
+        run: |
+          python scripts/junior_researcher.py
+
+      - name: Create Pull Request with Proposed Research Updates
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(research): weekly autonomous geoenergy & policy intelligence brief"
+          title: "🤖 Junior Researcher: Weekly GeoEnergy & Policy Intelligence Brief"
+          body: |
+            ## Autonomous Research Agent Report
+            Your automated **Junior Researcher** agent has scanned the latest federal registers, DOE geothermal bulletins, and CISA energy advisories.
+
+            ### What was updated:
+            * Compiled new intelligence brief in `radar/weekly_digests/`.
+            * Filtered for signals regarding DLE lithium extraction, wellbore geothermal heat, and OT cyber telemetry.
+
+            ### Action Required:
+            1. Click **Files changed** to review the weekly intelligence brief.
+            2. Merge this PR to incorporate the new data into your living research repository!
+          branch: "bot/junior-researcher-weekly-scan"
+          delete-branch: true
+          labels: |
+            research-agent
+            automated-intelligence
+            needs-review
