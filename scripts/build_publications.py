@@ -27,12 +27,12 @@ METADATA = {
         "date": "September 2026",
     },
     "WP03_Satellite_Subsurface_Emissions_Coupling": {
-        "title": "Coupled Satellite InSAR and Deep Subsurface Geomechanics for Induced Seismicity Forecasting in Industrial High-Rate Disposal Formations",
+        "title": "Coupling Spaceborne Trace Gas Spectrometry with Wellhead Distributed Acoustic Sensing for IRA 45X Zero-Emissions Verification",
         "authors": "Andrew C. Kieckhefer",
         "affiliations": "Institute of GeoEnergy Engineering, Heriot-Watt University, Edinburgh EH14 4AS, UK<br>Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison, Madison, WI 53706, USA",
         "email": "weather.amazon.go@gmail.com | andy.kieckhefer@gmail.com",
         "server": "EarthArXiv / ESS Open Archive",
-        "journal": "Journal of Geophysical Research: Solid Earth",
+        "journal": "Environmental Research Letters",
         "date": "September 2026",
     }
 }
