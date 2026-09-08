@@ -29,7 +29,7 @@ Respectfully,
 * **Quantitative Focus:** Multiphase fluid dynamics, technical ordinary differential equations, atmospheric physics, environmental geology, and Python scientific programming.
 * **Operational Leadership & National Service:** 4-year sequence in Air Force ROTC Aerospace Studies (`A F AERO 101–402`) with straight **A**s across all leadership and national security terms.
 * **Federal Scholarship Tenure & Global Immersion:** U.S. Department of Defense **Project GO (Global Officer)** Arabic Scholar (administered by DLNSEO; intensive Arabic language, regional security, and cultural immersion in Morocco via University of Minnesota / UW–Madison AFROTC).
-* **Undergraduate Cadet Merit Award:** Recipient of the **Capt. Jeff Hill Legacy Fund Scholarship ($2,000)**, awarded competitively to a distinguished Air Force ROTC cadet (Detachment 925, University of Wisconsin–Madison) for leadership character, academic resilience, and community dedication.
+* **Undergraduate Cadet Merit Award:** Recipient of the competitive **Capt. Jeff Hill Legacy Fund Scholarship ($2,000)** (2017), awarded to a distinguished Air Force ROTC cadet (Detachment 925, University of Wisconsin–Madison) for leadership character, academic resilience, and community dedication ([Verification Photo](assets/2017-Andy-Kieckhefer-Jeff-Hill-Award.jpg) | [Foundation Recipient Register](https://jeffhilllegacyfund.org/recipients/)).
 * **Regional Readiness for Dubai:** Direct linguistic and cross-cultural competency for immediate deployment at Heriot-Watt University’s Dubai Campus (Years 1–2).
 
 ---

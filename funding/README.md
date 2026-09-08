@@ -34,8 +34,24 @@ A primary differentiator of this doctoral candidacy is the candidate's establish
 * **Competitive Merit Selection:** Project GO awards are granted through a rigorous nationwide competition evaluating academic distinction, quantitative discipline, and national service leadership across Air Force, Army, and Navy ROTC programs.
 * **Intensive Language & Cultural Mastery:** The award funded intensive Arabic language, cross-cultural diplomacy, and regional security immersion in Morocco (in collaboration with the University of Minnesota and the University of Wisconsin–Madison).
 * **Strategic Value for Heriot-Watt Dubai (Years 1–2):** Unlike standard international applicants entering the UAE without regional background, Kieckhefer brings verified DoD-sponsored language training and cultural fluency directly to Heriot-Watt’s Dubai campus, providing immediate diplomatic and operational standing when interfacing with Gulf energy consortia (ADEK, ADNOC, Masdar).
-* **Undergraduate Cadet Leadership Distinction:** Recipient of the competitive **Capt. Jeff Hill Legacy Fund Scholarship ($2,000)** through UW–Madison Air Force ROTC Detachment 925, awarded in recognition of academic diligence, moral leadership, and community service.
+* **Undergraduate Cadet Leadership Distinction:** Recipient of the competitive **Capt. Jeff Hill Legacy Fund Scholarship ($2,000)** through UW–Madison Air Force ROTC Detachment 925, awarded in recognition of academic diligence, moral leadership, and community service ([Verification Dossier](../docs/assets/README.md)).
 * **Security Clearance & Trustworthiness:** 4 consecutive years of Air Force ROTC Aerospace Studies leadership combined with DoD federal vetting provides unassailable integrity for UK **Academic Technology Approval Scheme (ATAS)** verification, export control compliance, and sensitive OT energy infrastructure research.
+
+### 📸 Verified Archival Record: Capt. Jeff Hill Legacy Fund Award ($2,000)
+
+<div align="center">
+  <img src="../docs/assets/2017-Andy-Kieckhefer-Jeff-Hill-Award.jpg" alt="Cadet Andy Kieckhefer - Capt. Jeff Hill Legacy Fund Scholarship" width="440" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <p><em><strong>Cadet Andy Kieckhefer</strong> in USAF Service Dress at AFROTC Detachment 925, Department of Aerospace Studies, University of Wisconsin–Madison.<br>Recipient of the <strong>Capt. Jeff Hill Legacy Fund Scholarship ($2,000)</strong> (2017).</em></p>
+</div>
+
+| Verification Attribute | Official Web Registry Record |
+| :--- | :--- |
+| **Awarding Foundation** | [The Jeff Hill Legacy Fund](https://jeffhilllegacyfund.org/recipients/) |
+| **Official Web Image Title** | `Andy Kieckhefer – U of WI $2,000` |
+| **Official Page Caption** | `<h4>Cadet Andy Kieckhefer</h4><p>University of Wisconsin<br />$2000</p>` |
+| **Institutional Unit** | Air Force ROTC Detachment 925, University of Wisconsin–Madison |
+| **Source Image URL** | `https://jeffhilllegacyfund.org/wp-content/uploads/2021/09/2017-Andy-Kieckhefer-2000-scaled.jpg` |
+| **Significance** | Establishes verified undergraduate competitive merit selection, demonstrating moral leadership and quantitative persistence without ambiguity. |
 
 ---
 
