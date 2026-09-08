@@ -39,6 +39,23 @@ python serve_domains.py
 ## 🎯 Executive Research Vision
 This repository houses the living, version-controlled doctoral research framework for converting mature petroleum wellbores into co-production systems for **battery-grade lithium (Direct Lithium Extraction - DLE)** and **low-enthalpy geothermal energy**, safeguarded by a continuous **360-degree operational technology (OT) cyber-physical risk engine**.
 
+---
+
+## 🗺️ The Legal Compass: Industry Regulatory & Statutory Source of Truth
+
+Every working paper, operational telemetry rule, and cyber-physical architecture developed in this repository is designed to solve a specific engineering bottleneck governed by four foundational legal authorities:
+
+| Level | Legal Authority | What It Decides | Research & Engineering Mandate |
+| :--- | :--- | :--- | :--- |
+| **Federal Tax** | **26 U.S.C. § 45X** / IRS Treas. Reg. § 1.45X | Will the facility receive a 10% federal production subsidy? | Continuous empirical telemetry verifying battery-grade lithium ($>99.2\%$ purity). |
+| **Federal Environmental** | **40 CFR Part 98 Subpart W** / SDWA | What emissions and injection standards must the facility empirically prove? | Multi-scale spaceborne (TROPOMI) to downhole (DAS) zero-emissions verification. |
+| **State Subsurface** | **AOGC Ark. Code § 15-76** / Texas RRC Rule 9 | Can you legally convert the steel wellbore and extract the brine? | Casing annular pressure balancing, P&A liability elimination, and royalty compliance. |
+| **Cyber-Physical** | **NIST SP 800-82 Rev. 3** / CISA Directives | Is the wellhead SCADA telemetry legally defensible against intrusion? | Physics-informed Modbus/DNP3 anomaly detection and dynamic edge failover. |
+
+> *"Every working paper we draft—from hydrodynamic column elution to physics-informed SCADA telemetry—is designed to solve a specific engineering bottleneck created by these four legal authorities."*
+
+---
+
 ```mermaid
 graph TD
     subgraph ORBITAL [🛰️ Spaceborne Observation: NASA HAQAST / TROPOMI]
@@ -135,6 +152,7 @@ A scheduled CI/CD agent ([`.github/workflows/junior_researcher.yml`](.github/wor
 | **Funding & Financial Engines** | Strategic resourcing portfolio (James Watt Scholarship, UKRI, UAE Consortia, NSF, Caregivers to PhD) | [`funding/README.md`](funding/README.md) |
 | **Research Forecast & Roadmap** | 3.5-Year operational chronicle, 4 W's matrix (Who, Where, When, What), and story narrative | [`forecast/README.md`](forecast/README.md) |
 | **Publications & Google Scholar** | Working paper series, preprint archive, automated PDF compiler, and Google Scholar profile | [`publications/README.md`](publications/README.md) |
+| **The Legal Compass** | Codified statutory & regulatory source of truth (IRC § 45X, SDWA Class II/V, AOGC, NIST SP 800-82) | [`legal/README.md`](legal/README.md) |
 | **Telemetry Diagnostic Brief** | Real-time diagnostic briefing produced by the autonomous Python agent | [`radar/latest_telemetry_diagnostic.md`](radar/latest_telemetry_diagnostic.md) |
 
 ---

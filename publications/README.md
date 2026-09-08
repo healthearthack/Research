@@ -38,9 +38,24 @@ publications/
 | :---: | :--- | :--- | :---: | :---: | :---: |
 | **WP-01** | [**Direct Lithium Extraction (DLE) from Continental Petroleum Brines**](drafts/WP01_DLE_Wellbore_Repurposing_Review.md) | Repurposing late-life petroleum wellbores into closed-loop DLE and geothermal co-production systems; Smackover brine fluid kinetics. | **EarthArXiv** | *Applied Energy*<br>*(IF: 11.2)* | 🟢 **DRAFT READY**<br>[PDF](dist/WP01_DLE_Wellbore_Repurposing_Review.pdf) |
 | **WP-02** | [**Physics-Informed Anomaly Detection in Upstream SCADA Networks**](drafts/WP02_OT_Cybersecurity_SCADA_Telemetry.md) | Hardening Modbus/DNP3 wellhead RTUs against sensor spoofing using hydrodynamic mass-balance laws under NIST SP 800-82. | **TechRxiv** | *IEEE Trans. Industrial Informatics*<br>*(IF: 12.3)* | 🟢 **DRAFT READY**<br>[PDF](dist/WP02_OT_Cybersecurity_SCADA_Telemetry.pdf) |
-| **WP-03** | [**Coupling Spaceborne Trace Gas Spectrometry with Wellhead DAS**](drafts/WP03_Satellite_Subsurface_Emissions_Coupling.md) | Ground-truthing Sentinel-5P TROPOMI trace gas columns with downhole Distributed Acoustic Sensing for IRA 45X tax credit certification. | **ESS Open Archive** | *Environmental Research Letters*<br>*(IF: 6.7)* | 🟢 **DRAFT READY**<br>[PDF](dist/WP03_Satellite_Subsurface_Emissions_Coupling.pdf) |
+| **WP-03** | [**Coupling Spaceborne Trace Gas Spectrometry with Wellhead DAS**](drafts/WP03_Satellite_Subsurface_Emissions_Coupling.md) | Ground-truthing Sentinel-5P TROPOMI trace gas columns with downhole Distributed Acoustic Sensing for IRA 45X tax credit certification. | **EarthArXiv** | *Environmental Research Letters*<br>*(IF: 6.7)* | 🟢 **DRAFT READY**<br>[PDF](dist/WP03_Satellite_Subsurface_Emissions_Coupling.pdf) |
+| **WP-04** | [**From Edge to Wellhead: Translating Software-Defined Telemetry**](drafts/WP04_Edge_To_Wellhead_Cyber_Physical_Synthesis.md) | Accessible synthesis bridging edge computing, containerized microservices, and SDN directly into high-pressure DLE wellheads and Smart Water systems. | **EarthArXiv / Zenodo** | *IEEE IoT Mag. / Applied Energy*<br>*(IF: 11.2)* | 🟢 **DRAFT READY**<br>[PDF](dist/WP04_Edge_To_Wellhead_Cyber_Physical_Synthesis.pdf) |
 
 ---
+
+## 🗺️ The Legal Compass: Industry Regulatory & Statutory Source of Truth
+
+Every working paper, operational telemetry rule, and cyber-physical architecture developed in this repository is designed to solve a specific engineering bottleneck governed by four foundational legal authorities:
+
+| Level | Legal Authority | What It Decides | Research & Engineering Mandate |
+| :--- | :--- | :--- | :--- |
+| **Federal Tax** | **26 U.S.C. § 45X** / IRS Treas. Reg. § 1.45X | Will the facility receive a 10% federal production subsidy? | Continuous empirical telemetry verifying battery-grade lithium ($>99.2\%$ purity). |
+| **Federal Environmental** | **40 CFR Part 98 Subpart W** / SDWA | What emissions and injection standards must the facility empirically prove? | Multi-scale spaceborne (TROPOMI) to downhole (DAS) zero-emissions verification. |
+| **State Subsurface** | **AOGC Ark. Code § 15-76** / Texas RRC Rule 9 | Can you legally convert the steel wellbore and extract the brine? | Casing annular pressure balancing, P&A liability elimination, and royalty compliance. |
+| **Cyber-Physical** | **NIST SP 800-82 Rev. 3** / CISA Directives | Is the wellhead SCADA telemetry legally defensible against intrusion? | Physics-informed Modbus/DNP3 anomaly detection and dynamic edge failover. |
+
+> *"Every working paper we draft—from hydrodynamic column elution to physics-informed SCADA telemetry—is designed to solve a specific engineering bottleneck created by these four legal authorities."*
+
 
 ## ⚙️ Automated PDF Compilation Pipeline
 
