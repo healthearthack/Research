@@ -1,12 +1,12 @@
 # Physics-Informed Anomaly Detection in Upstream SCADA Networks: Mitigating Sensor Spoofing in High-Pressure Hydrothermal Wellheads
 
-**Andrew C. Kieckhefer**¹*, **Dr. Christos Chrysoulas**²  
-¹ *Institute of GeoEnergy Engineering (IGE), Heriot-Watt University, Edinburgh EH14 4AS, UK*  
-² *School of Mathematical and Computer Sciences (MACS), Heriot-Watt University, Dubai International Academic City, UAE*  
+**Andrew C. Kieckhefer**¹*  
+¹ *Institute of GeoEnergy Engineering, School of Energy, Geoscience, Infrastructure and Society, Heriot-Watt University, Edinburgh EH14 4AS, UK*  
 * *Corresponding Author / Google Scholar Anchor:* `weather.amazon.go@gmail.com` | `andy.kieckhefer@gmail.com`  
+*Undergraduate Lineage:* Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison, Madison, WI 53706, USA  
 
 **Target Journal:** *IEEE Transactions on Industrial Informatics*  
-**Preprint Repository:** TechRxiv | DOI: `Pending Deposit`  
+**Preprint Repository:** EarthArXiv | DOI: `Pending Deposit`  
 **Date:** September 2026  
 
 ---

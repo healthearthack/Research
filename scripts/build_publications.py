@@ -19,10 +19,10 @@ METADATA = {
     },
     "WP02_OT_Cybersecurity_SCADA_Telemetry": {
         "title": "Physics-Informed Anomaly Detection in Upstream SCADA Networks: Mitigating Sensor Spoofing in High-Pressure Hydrothermal Wellheads",
-        "authors": "Andrew C. Kieckhefer, Dr. Christos Chrysoulas",
-        "affiliations": "Institute of GeoEnergy Engineering & School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh & Dubai<br>Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison",
+        "authors": "Andrew C. Kieckhefer",
+        "affiliations": "Institute of GeoEnergy Engineering, Heriot-Watt University, Edinburgh EH14 4AS, UK<br>Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison, Madison, WI 53706, USA",
         "email": "weather.amazon.go@gmail.com | andy.kieckhefer@gmail.com",
-        "server": "TechRxiv",
+        "server": "EarthArXiv",
         "journal": "IEEE Transactions on Industrial Informatics",
         "date": "September 2026",
     },
