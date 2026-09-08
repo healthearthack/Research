@@ -44,7 +44,30 @@ The philosophy of our research repository—**"The Tools to Make the Engine"**�
 
 ---
 
-## 3. Advocacy Commitments & Direct Actions
+## 3. Institutional Anchors: Heriot-Watt Athena SWAN & NSF Career-Life Balance
+
+This initiative does not rely on abstract goodwill; it is structurally anchored to two world-leading institutional mechanisms:
+
+### A. Heriot-Watt University Athena SWAN Charter
+* **The Framework:** Heriot-Watt University is a decorated member of the **Athena SWAN Charter** (holding institution-wide Bronze and school-level Silver awards), dedicated to dismantling structural barriers for women and primary caregivers in STEM.
+* **The Carer Support Fund:** Provides direct financial grants to postgraduate researchers with significant family caregiving responsibilities (caring for children, disabled relatives, or elderly parents).
+* **Eligible Provisions:**
+  * Subsidizing respite care and home nursing assistance during critical thesis milestones (e.g., viva defense, major publication deadlines).
+  * Funding remote computational equipment and high-speed telemetry links to minimize mandatory campus physical seat time.
+  * Travel and child/dependent accommodation allowances during compulsory academic conferences.
+
+### B. National Science Foundation (NSF) Career-Life Balance (CLB) Initiative
+* **The Framework:** A premier federal initiative supporting researchers facing acute family caregiving events (childbirth, adoption, or caring for elderly parents with chronic disabling conditions).
+* **Supplemental Grants:** Provides **up to $30,000 in supplemental funding** on active NSF awards to hire research technicians, programmers, or postbaccalaureate specialists to maintain experimental laboratory velocity while the primary researcher manages family caregiving.
+* **Transatlantic Application:** Applicable when transitioning to postdoctoral research appointments with U.S. institutional partners (**The Holloway Group at UW–Madison**).
+
+### C. Eldercare & Chronic Medical Fragility Dimension
+* Traditional academic diversity policies often overlook **adult children serving as primary caregivers for elderly parents managing chronic health conditions** (e.g., congestive heart failure, cardiac arrhythmias, post-surgical rehabilitation).
+* This initiative formally unites eldercare advocacy with maternal and childcare equity, demonstrating how remote digital twin architectures enable world-class doctoral execution without neglecting vulnerable family members.
+
+---
+
+## 4. Advocacy Commitments & Direct Actions
 
 ### 👶 Commitment 1: Flexible, Output-Driven Doctoral Milestones
 * Championing institutional policies that evaluate postgraduate researchers based on computational outputs, publication quality, and validated models—rather than rigid physical "seat time" in laboratories.

@@ -52,9 +52,11 @@ The energy transition requires capital-intensive infrastructure renewal. While m
 
 ## 3. Advocacy Pillars & Educational Outreach
 
-### 🏛️ Pillar 1: Academic & Student Cultural Exchange
-* Sponsoring virtual symposia and research workshops connecting engineering students at **Heriot-Watt University Dubai**, **Khalifa University**, and **United Arab Emirates University (UAEU)** with Midwestern engineering students at the **University of Wisconsin–Madison**.
-* Providing mentorship to Arab and Middle Eastern students seeking postgraduate research opportunities in computational science, fluid dynamics, and operational technology.
+### 🏛️ Pillar 1: UW–Madison AOS to Heriot-Watt Dubai Academic Exchange
+* **Leveraging Active UW–Madison AOS Alumni Status:** Serving as the direct operational bridge connecting the **Department of Atmospheric and Oceanic Sciences (AOS) at UW–Madison** with **Heriot-Watt University’s Dubai Campus** and UAE clean energy institutions.
+* **The Transatlantic Student Exchange:** Sponsoring virtual symposia, collaborative data workshops, and reciprocal student research delegations connecting UW–Madison earth and atmospheric science students with engineering peers at Heriot-Watt Dubai, **Khalifa University**, and the **Masdar Institute**.
+* **The Project GO Founding Bridge:** Demonstrating to incoming American undergraduate and ROTC students how U.S. Department of Defense **Project GO (Global Officer)** language immersion (Arabic) can be directly transformed into peaceful, productive international clean-energy diplomacy.
+* **Postgraduate Mentorship:** Providing specialized mentorship to Arab and Middle Eastern students seeking postgraduate research trajectories in computational modeling, fluid dynamics, and operational technology across both U.S. and UK institutions.
 
 ### 🎙️ Pillar 2: Public Discourse & De-Stigmatization
 * Publishing public-facing op-eds and policy briefs highlighting the leadership of Middle Eastern scientists, female engineers, and renewable energy executives.

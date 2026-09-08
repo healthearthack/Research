@@ -125,6 +125,7 @@ A scheduled CI/CD agent ([`.github/workflows/junior_researcher.yml`](.github/wor
 | **Supporting Document 1** | Extended scientific methodology, 3.5-year Gantt milestone schedule, and Heriot-Watt lab allocations | [`docs/Supporting_Doc_1_Extended_Proposal_and_Timeline.md`](docs/Supporting_Doc_1_Extended_Proposal_and_Timeline.md) |
 | **Supporting Document 2** | Academic CV, formal Letter of Intent, UW–Madison transcript audit, and UK/UAE compliance audit | [`docs/Supporting_Doc_2_Academic_Dossier_and_Compliance_Audit.md`](docs/Supporting_Doc_2_Academic_Dossier_and_Compliance_Audit.md) |
 | **Dual-Domain Specification**| Grounding the `.oil` and `.h2o` digital twin TLD architecture in established research | [`docs/domain_architecture_oil_and_h2o.md`](docs/domain_architecture_oil_and_h2o.md) |
+| **Entity & Ecosystem Architecture** | 4-Pillar governance linking LLC incubation, Heriot-Watt doctoral host, UW–Madison AOS, and advocacy | [`docs/commercial_and_entity_architecture.md`](docs/commercial_and_entity_architecture.md) |
 | **Annotated Bibliography** | 8-part foundational literature review (USGS 2024, DOE, Kumar DLE, NIST SP 800-82r3, SPE-21820) | [`references/annotated_bibliography.md`](references/annotated_bibliography.md) |
 | **BibTeX Citations** | Standardized LaTeX / Zotero citation library | [`references/references.bib`](references/references.bib) |
 | **Post-Doctoral Target Lines** | Modular career launchpad & bridge dossiers (The Holloway Group, Heriot-Watt, NOAA, Shell) | [`career/README.md`](career/README.md) |
