@@ -1,0 +1,22 @@
+{
+  "domain": "wellbore-01.smackover.oil",
+  "tld": ".oil",
+  "target": "Subsurface Wellhead Barrier & Mechanical Integrity",
+  "facility_id": "HWU-SMACKOVER-ALPHA-01",
+  "well_id": "API-03-017-21948-REPURPOSED",
+  "compiled_at_utc": "2026-09-08T09:22:45.398549+00:00",
+  "status": "PASS",
+  "barrier_parameters": {
+    "measured_depth_ft": 10450.0,
+    "casing_pressure_psi": 842.1,
+    "bottom_hole_pressure_psi": 4820.5,
+    "bottom_hole_temperature_c": 128.4,
+    "das_acoustic_frequency_khz": 1.45,
+    "surface_methane_flux_kg_hr": 0.02
+  },
+  "ot_security": {
+    "protocol": "Modbus/TCP + DNP3",
+    "firmware_integrity": "VERIFIED_SHA256",
+    "nist_sp_800_82_status": "VERIFIED_ISOLATED"
+  }
+}

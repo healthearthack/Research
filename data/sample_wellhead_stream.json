@@ -1,0 +1,42 @@
+{
+  "facility_id": "HWU-SMACKOVER-ALPHA-01",
+  "basin": "Smackover Formation (Arkansas-Louisiana-Texas Basin)",
+  "well_id": "API-03-017-21948-REPURPOSED",
+  "timestamp_utc": "2026-09-08T09:15:00Z",
+  "operational_mode": "CO_PRODUCTION_DLE_GEOTHERMAL",
+  "domain_addressing": {
+    "oil_domain": "wellbore-01.smackover.oil",
+    "h2o_domain": "dle-circuit.arkansas.h2o",
+    "smart_water_endpoint": "telemetry.smartwater.h2o",
+    "tld_classification": {
+      ".oil": "Subsurface Hydrocarbon Wellbore Barrier Integrity & P&A Repurposing",
+      ".h2o": "Deep Produced Brine, Direct Lithium Extraction (DLE) & Smart Water Management"
+    }
+  },
+  "reservoir_telemetry": {
+    "measured_depth_ft": 10450.0,
+    "true_vertical_depth_ft": 9820.0,
+    "bottom_hole_temperature_c": 128.4,
+    "wellhead_temperature_c": 114.2,
+    "bottom_hole_pressure_psi": 4820.5,
+    "wellhead_casing_pressure_psi": 842.1,
+    "brine_flow_rate_bpd": 14200.0,
+    "lithium_concentration_ppm": 385.0
+  },
+  "surface_processing_telemetry": {
+    "dle_sorption_bed_pressure_drop_psi": 18.4,
+    "dle_lithium_recovery_efficiency_pct": 92.4,
+    "geothermal_orc_heat_exchanger_inlet_c": 112.8,
+    "geothermal_orc_heat_exchanger_outlet_c": 64.1,
+    "net_geothermal_power_kw": 850.0,
+    "reinjection_pressure_psi": 2100.0
+  },
+  "cyber_physical_ot_security": {
+    "scada_protocol": "Modbus/TCP + DNP3",
+    "plc_firmware_integrity": "VERIFIED_SHA256",
+    "modbus_exception_count_last_10m": 0,
+    "distributed_acoustic_sensing_strain_khz": 1.45,
+    "cisa_threat_level": "LOW_NOMINAL",
+    "surface_methane_flux_kg_hr": 0.02
+  }
+}

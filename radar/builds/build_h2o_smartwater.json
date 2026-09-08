@@ -1,0 +1,21 @@
+{
+  "domain": "dle-circuit.arkansas.h2o",
+  "tld": ".h2o",
+  "smart_water_node": "telemetry.smartwater.h2o",
+  "target": "Hydrothermal Brine Circuit & Smart Water Recovery",
+  "facility_id": "HWU-SMACKOVER-ALPHA-01",
+  "well_id": "API-03-017-21948-REPURPOSED",
+  "compiled_at_utc": "2026-09-08T09:22:45.399225+00:00",
+  "status": "PASS",
+  "hydrochemical_parameters": {
+    "brine_throughput_bpd": 14200.0,
+    "lithium_ppm": 385.0,
+    "dle_recovery_pct": 92.4,
+    "dle_resin_delta_p_psi": 18.4,
+    "daily_lithium_kg": 803.12,
+    "geothermal_orc_kw": 850.0,
+    "daily_geothermal_mwh": 20.4,
+    "reinjection_pressure_psi": 2100.0
+  },
+  "supervisory_match": "Dr. Christos Chrysoulas (Smart Water Management Systems, Heriot-Watt University)"
+}

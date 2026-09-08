@@ -16,23 +16,37 @@ While mature petroleum basins (e.g., the Smackover Formation, Permian Basin, Gul
 * **Bottom-of-Well (Subsurface Geomechanics & OT):** Upstream operators record high-frequency thermodynamic and mechanical states via wellhead SCADA sensors, Distributed Acoustic Sensing (DAS), and downhole pressure/temperature gauges.
 * **The Gap:** Atmospheric observation models routinely struggle with **sub-kilometer source attribution and ground-truth validation** in dense legacy oil and gas fields, while subsurface engineers lack the atmospheric chemistry transport models required to prove that repurposed wellbore operations are not releasing fugitive plumes into the planetary boundary layer.
 
-```
-┌───────────────────────────────────────────────────────────────────┐
-│ ORBITAL TIER: NASA HAQAST / TROPOMI / TEMPO                       │
-│ Column Densities of CH4, VOCs, and Aerosol Optical Depth          │
-└─────────────────────────────────┬─────────────────────────────────┘
-                                  │ Spectral Inversion & Downscaling
-                                  ▼
-┌───────────────────────────────────────────────────────────────────┐
-│ MESOSCALE TIER: Planetary Boundary Layer Dispersion Modeling      │
-│ High-Resolution WRF-Chem / CMAQ Chemical Transport Engine         │
-└─────────────────────────────────┬─────────────────────────────────┘
-                                  │ Source Attribution Cross-Validation
-                                  ▼
-┌───────────────────────────────────────────────────────────────────┐
-│ SURFACE & SUBSURFACE TIER: Heriot-Watt IGE Telemetry              │
-│ Wellhead Distributed Acoustic Sensing (DAS) + Modbus SCADA Telemetry│
-└───────────────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    subgraph ORBITAL [🛰️ Spaceborne Observation Tier: NASA HAQAST / TROPOMI / TEMPO]
+        O1["Sentinel-5P TROPOMI (Total Column CH4 & NO2)"]
+        O2["NASA TEMPO (High-Frequency Geostationary Spectral Data)"]
+        O1 --> O3["Spectral Inversion & Downscaled Trace Gas Mapping"]
+        O2 --> O3
+    end
+
+    subgraph MESOSCALE [🌪️ Planetary Boundary Layer & Atmospheric Chemistry]
+        M1["WRF-Chem / CMAQ Chemical Transport Engine"]
+        M2["HRRR Planetary Boundary Layer Meteorological Inversion"]
+        O3 --> M1
+        M2 --> M1
+        M1 --> M3["Sub-Kilometer Atmospheric Plume Attribution"]
+    end
+
+    subgraph SUBSURFACE [🛢️ Subsurface & Wellhead Ground-Truth Tier: Heriot-Watt]
+        S1["Distributed Acoustic Sensing (DAS) Fiber-Optic Telemetry"]
+        S2["Wellhead SCADA Annular Pressure (.oil domain)"]
+        S3["Direct Lithium Extraction Brine Chemistry (.h2o domain)"]
+        S1 --> S4["Continuous Multi-Point Ground-Truth Feed"]
+        S2 --> S4
+        S3 --> S4
+    end
+
+    M3 <--->|"Bi-Directional Validation & Zero-Leakage Certification"| S4
+
+    style ORBITAL fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff
+    style MESOSCALE fill:#1e293b,stroke:#a855f7,stroke-width:2px,color:#fff
+    style SUBSURFACE fill:#022c22,stroke:#10b981,stroke-width:2px,color:#fff
 ```
 
 ---

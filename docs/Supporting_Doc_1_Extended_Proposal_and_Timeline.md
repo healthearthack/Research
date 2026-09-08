@@ -31,10 +31,31 @@ This research program resolves a fundamental bottleneck in the global energy and
 
 ## 4. 3.5-Year Ph.D. Milestone & Dissemination Schedule
 
-* **Year 1 (Foundation & Modeling):** Comprehensive geochemical synthesis; formulation of coupled multiphase flow equations in porous media. **Milestone: Transfer Viva (Passage to full Ph.D. status).**
-* **Year 2 (Co-Extraction Kinetics & Simulation):** Numerical coupling of geothermal heat exchangers with selective Li+ adsorption columns; HPHT simulation runs. **Milestone: Submission of Journal Paper 1 (Target: *ACS ES&T Engineering* or *SPE Journal*).**
-* **Year 3 (Cyber-Physical Telemetry Defense):** Integration of edge DAS fiber data with OT network monitoring algorithms under NIST SP 800-82 standards. **Milestone: Submission of Journal Paper 2 (Target: *Applied Energy* or *IEEE Trans. Industrial Informatics*).**
-* **Final Stage (Months 37–42):** Final thesis compilation, external review, and **Doctoral Defense (Viva Voce)** at Heriot-Watt University.
+* **Year 1 (Foundation & Modeling - Dubai Campus):** Comprehensive geochemical synthesis; formulation of coupled multiphase flow equations in porous media. **Milestone: Transfer Viva (Passage to full Ph.D. status).**
+* **Year 2 (Co-Extraction Kinetics & Simulation - Dubai Campus):** Numerical coupling of geothermal heat exchangers with selective Li+ adsorption columns; HPHT simulation runs under Dr. Christos Chrysoulas's Smart Water framework. **Milestone: Submission of Journal Paper 1 (Target: *ACS ES&T Engineering* or *SPE Journal*).**
+* **Year 3 (Cyber-Physical Telemetry Defense & Lab Validation - Edinburgh Campus):** Physical core flood experiments in IGE HPHT labs; integration of edge DAS fiber data with OT network monitoring algorithms under NIST SP 800-82 standards. **Milestone: Submission of Journal Paper 2 (Target: *Applied Energy* or *IEEE Trans. Industrial Informatics*).**
+* **Final Stage (Months 37–42 - Edinburgh Campus):** Final thesis compilation, external review, and **Doctoral Defense (Viva Voce)** at Heriot-Watt University.
+
+```mermaid
+gantt
+    title 3.5-Year Doctoral Execution Schedule & Dual-Campus Mobility
+    dateFormat  YYYY-MM
+    section Year 1 (Dubai)
+    Literature & Reactive Transport Modeling     :active, 2027-01, 2027-08
+    OT SCADA Telemetry Architecture Formulation   :2027-06, 2027-12
+    Transfer Viva (Progress to Full PhD)          :milestone, 2027-12, 0d
+    section Year 2 (Dubai)
+    DLE Sorption Kinetics & Simulation Runs       :2028-01, 2028-07
+    Smart Grid / Smart Water Telemetry Coupling   :2028-05, 2028-11
+    Submission of Journal Paper 1                 :milestone, 2028-12, 0d
+    section Year 3 (Edinburgh)
+    IGE HPHT Core Flood Laboratory Testing        :2029-01, 2029-08
+    Micro-CT Imaging & DAS Validation             :2029-06, 2029-12
+    Submission of Journal Paper 2                 :milestone, 2029-12, 0d
+    section Year 4 (Edinburgh)
+    Doctoral Thesis Compilation & Review          :2030-01, 2030-05
+    Doctoral Defense (Viva Voce)                  :milestone, 2030-06, 0d
+```
 
 ---
 
