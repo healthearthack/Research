@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """
-Dual-Domain Local Server:
-  - website.oil:8000  -> Subsurface Wellhead Barrier SCADA & HELP WANTED Board
-  - website.h2o:8001  -> Hydrothermal Brine / Smart Water & HELP WANTED Board
+Dual-Domain Multi-Port & Virtual Host Local Server:
+  - Port 80 (Clean URLs):
+      http://website.oil or http://akbar.oil  -> .oil Subsurface Barrier & Help Wanted
+      http://website.h2o or http://ma.h2o     -> .h2o Smart Water & Help Wanted
+  - Port 8000:
+      http://website.oil:8000, http://akbar.oil:8000, or http://localhost:8000
+  - Port 8001:
+      http://website.h2o:8001, http://ma.h2o:8001, or http://localhost:8001
 """
 
 import json
@@ -19,7 +24,7 @@ def get_telemetry():
     return {}
 
 # ---------------------------------------------------------------------------
-# HTML: website.oil:8000 (Subsurface Barrier & Help Wanted)
+# HTML: .OIL Site (Subsurface Barrier & Help Wanted)
 # ---------------------------------------------------------------------------
 
 WEBSITE_OIL_HTML = """<!DOCTYPE html>
@@ -27,7 +32,7 @@ WEBSITE_OIL_HTML = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website.oil:8000 | Subsurface Barrier & Help Wanted</title>
+    <title>website.oil | Subsurface Barrier & Help Wanted</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
         body { background-color: #0b0f19; color: #f3f4f6; padding: 28px; line-height: 1.5; }
@@ -59,10 +64,10 @@ WEBSITE_OIL_HTML = """<!DOCTYPE html>
 <body>
     <div class="header">
         <div>
-            <h1 style="font-size: 26px; color: #f59e0b;">🛢️ WEBSITE.OIL:8000 — SUBSURFACE BARRIER DIGITAL TWIN</h1>
-            <p style="color: #9ca3af; margin-top: 4px;">Host Address: <strong>http://website.oil:8000</strong> (or <code>http://localhost:8000</code>) | Facility: HWU-SMACKOVER-ALPHA-01</p>
+            <h1 style="font-size: 26px; color: #f59e0b;">🛢️ WEBSITE.OIL — SUBSURFACE BARRIER DIGITAL TWIN</h1>
+            <p style="color: #9ca3af; margin-top: 4px;">Domains: <strong>http://website.oil</strong> | <strong>http://akbar.oil</strong> | <strong>http://localhost:8000</strong></p>
         </div>
-        <div class="host-badge">website.oil:8000</div>
+        <div class="host-badge">website.oil</div>
     </div>
 
     <!-- Live Telemetry -->
@@ -91,7 +96,7 @@ WEBSITE_OIL_HTML = """<!DOCTYPE html>
 
     <!-- Help Wanted Board -->
     <div class="section-title">
-        <span>🚨 OPEN RESEARCH REQUISITIONS ("HELP WANTED") — .OIL:8000 DOMAIN</span>
+        <span>🚨 OPEN RESEARCH REQUISITIONS ("HELP WANTED") — .OIL DOMAIN</span>
     </div>
 
     <div class="help-wanted-container">
@@ -122,10 +127,10 @@ WEBSITE_OIL_HTML = """<!DOCTYPE html>
 
     <div class="nav-bar">
         <div>
-            <strong>Cross-Domain Flow:</strong> Hydrothermal brine flows from this .oil barrier into the .h2o recovery circuit.
+            <strong>Cross-Domain Flow:</strong> Pressurized formation brine flows from this .oil barrier into the .h2o recovery circuit.
         </div>
         <div>
-            <a href="http://localhost:8001" class="btn">💧 Launch website.h2o:8001 (Smart Water Site) →</a>
+            <a href="http://website.h2o" class="btn">💧 Launch website.h2o (or Port 8001) →</a>
         </div>
     </div>
 </body>
@@ -133,7 +138,7 @@ WEBSITE_OIL_HTML = """<!DOCTYPE html>
 """
 
 # ---------------------------------------------------------------------------
-# HTML: website.h2o:8001 (Smart Water & Help Wanted)
+# HTML: .H2O Site (Smart Water & Help Wanted)
 # ---------------------------------------------------------------------------
 
 WEBSITE_H2O_HTML = """<!DOCTYPE html>
@@ -141,7 +146,7 @@ WEBSITE_H2O_HTML = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website.h2o:8001 | Smart Water & Help Wanted</title>
+    <title>website.h2o | Smart Water & Help Wanted</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
         body { background-color: #030d1a; color: #f0fdfa; padding: 28px; line-height: 1.5; }
@@ -173,10 +178,10 @@ WEBSITE_H2O_HTML = """<!DOCTYPE html>
 <body>
     <div class="header">
         <div>
-            <h1 style="font-size: 26px; color: #38bdf8;">💧 WEBSITE.H2O:8001 — SMART WATER & DLE DIGITAL TWIN</h1>
-            <p style="color: #94a3b8; margin-top: 4px;">Host Address: <strong>http://website.h2o:8001</strong> (or <code>http://localhost:8001</code>) | Faculty Alignment: Dr. Christos Chrysoulas</p>
+            <h1 style="font-size: 26px; color: #38bdf8;">💧 WEBSITE.H2O — SMART WATER & DLE DIGITAL TWIN</h1>
+            <p style="color: #94a3b8; margin-top: 4px;">Domains: <strong>http://website.h2o</strong> | <strong>http://ma.h2o</strong> | <strong>http://localhost:8001</strong></p>
         </div>
-        <div class="host-badge">website.h2o:8001</div>
+        <div class="host-badge">website.h2o</div>
     </div>
 
     <!-- Live Telemetry -->
@@ -205,7 +210,7 @@ WEBSITE_H2O_HTML = """<!DOCTYPE html>
 
     <!-- Help Wanted Board -->
     <div class="section-title">
-        <span>🚨 OPEN RESEARCH REQUISITIONS ("HELP WANTED") — .H2O:8001 DOMAIN</span>
+        <span>🚨 OPEN RESEARCH REQUISITIONS ("HELP WANTED") — .H2O DOMAIN</span>
     </div>
 
     <div class="help-wanted-container">
@@ -239,7 +244,7 @@ WEBSITE_H2O_HTML = """<!DOCTYPE html>
             <strong>Supervisory Nexus:</strong> Dr. Christos Chrysoulas — Smart Water Management Systems (Heriot-Watt University).
         </div>
         <div>
-            <a href="http://localhost:8000" class="btn">🛢️ Launch website.oil:8000 (Subsurface Site) →</a>
+            <a href="http://website.oil" class="btn">🛢️ Launch website.oil (or Port 8000) →</a>
         </div>
     </div>
 </body>
@@ -247,8 +252,28 @@ WEBSITE_H2O_HTML = """<!DOCTYPE html>
 """
 
 # ---------------------------------------------------------------------------
-# Request Handlers
+# Virtual Host Handler (Port 80)
 # ---------------------------------------------------------------------------
+
+class VirtualHostHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        host = self.headers.get("Host", "").lower().split(":")[0]
+        # Route based on domain name
+        if "h2o" in host or host == "ma.h2o" or host == "website.h2o":
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.end_headers()
+            self.wfile.write(WEBSITE_H2O_HTML.encode("utf-8"))
+        else:
+            # Default to .oil site
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.end_headers()
+            self.wfile.write(WEBSITE_OIL_HTML.encode("utf-8"))
+
+    def log_message(self, format, *args):
+        pass
+
 
 class OilHandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -273,38 +298,50 @@ class H2OHandler(BaseHTTPRequestHandler):
 
 
 def run_server(handler_class, port, name):
-    server = HTTPServer(("0.0.0.0", port), handler_class)
-    print(f"[+] [{name}] ONLINE -> http://localhost:{port}")
-    server.serve_forever()
+    try:
+        server = HTTPServer(("0.0.0.0", port), handler_class)
+        print(f"[+] [{name}] ONLINE -> port {port}")
+        server.serve_forever()
+    except Exception as e:
+        print(f"[-] [{name}] Could not bind to port {port}: {e}")
 
 
 def main():
     print("=" * 70)
-    print("[*] LAUNCHING DUAL-DOMAIN SITES: website.oil:8000 & website.h2o:8001")
+    print("[*] LAUNCHING DUAL-DOMAIN SITES: website.oil & website.h2o")
     print("=" * 70)
 
-    # Port 8000: website.oil:8000
+    # Thread 1: Port 80 (Virtual Host routing by domain name)
+    t_80 = threading.Thread(
+        target=run_server,
+        args=(VirtualHostHandler, 80, "Port 80 Virtual Host (website.oil & website.h2o)"),
+        daemon=True,
+    )
+    t_80.start()
+
+    # Thread 2: Port 8000 (.oil dedicated)
     t_oil = threading.Thread(
         target=run_server,
-        args=(OilHandler, 8000, "website.oil:8000 (Subsurface Barrier & Help Wanted)"),
+        args=(OilHandler, 8000, "website.oil (Port 8000)"),
         daemon=True,
     )
     t_oil.start()
 
-    # Port 8001: website.h2o:8001
+    # Thread 3: Port 8001 (.h2o dedicated)
     t_h2o = threading.Thread(
         target=run_server,
-        args=(H2OHandler, 8001, "website.h2o:8001 (Smart Water & Help Wanted)"),
+        args=(H2OHandler, 8001, "website.h2o (Port 8001)"),
         daemon=True,
     )
     t_h2o.start()
 
     print("=" * 70)
-    print("[+] BOTH SITES ACTIVE & SERVING:")
-    print("   [+] website.oil:8000 -> http://localhost:8000 (or http://website.oil:8000)")
-    print("   [+] website.h2o:8001 -> http://localhost:8001 (or http://website.h2o:8001)")
+    print("[+] SITES LIVE & SERVING:")
+    print("   [Clean URL] http://akbar.oil       (or http://website.oil)")
+    print("   [Clean URL] http://ma.h2o          (or http://website.h2o)")
+    print("   [Port 8000] http://localhost:8000  (website.oil:8000)")
+    print("   [Port 8001] http://localhost:8001  (website.h2o:8001)")
     print("=" * 70)
-    print("Press Ctrl+C to terminate.")
 
     try:
         threading.Event().wait()
