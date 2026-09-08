@@ -6,11 +6,30 @@
 [![Campus Mobility](https://img.shields.io/badge/Campuses-Dubai%20%28Y1--2%29%20%7C%20Edinburgh%20%28Y3--4%29-D0021B.svg)](https://www.hw.ac.uk/go-global/)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0%20%2F%20MIT-2ea44f.svg)](LICENSE.md)
 
+[![Local TLDs](https://img.shields.io/badge/Local%20TLD%20Portals-.oil%3A8001%20%7C%20.h2o%3A8002-FF6F00.svg)](http://localhost:8000)
+
 **Doctor of Engineering in Energy (`Energy, EngD`) | January 2027 Intake**  
 **Host Department:** Institute of GeoEnergy Engineering (IGE) & School of Mathematical and Computer Sciences (MACS)  
 **Heriot-Watt University:** Dubai Campus (Regional Telemetry & OT Operations) & Edinburgh Campus (HPHT Laboratory Validation)  
 **Applicant:** Andrew C. Kieckhefer (`andy.kieckhefer@gmail.com`)  
 **Application ID:** `9535a9e2-53ab-f111-8a75-06f0a7fb396f`
+
+---
+
+## 🌐 Active Locally Hosted TLD Portals (`.oil` & `.h2o`)
+
+This research dossier establishes an operational, locally hosted dual-domain digital twin architecture serving real-time SCADA telemetry across dedicated ports:
+
+| Domain Portal | Local Address | Digital Twin Host | Operational Scope |
+| :--- | :--- | :--- | :--- |
+| 🛢️ **.oil Wellhead Barrier** | [**`http://localhost:8001`**](http://localhost:8001) | `wellbore-01.smackover.oil:8001` | Annular casing pressure (842.1 psi), fiber DAS acoustic strain (1.45 kHz), cement barrier integrity, NIST SP 800-82 isolation |
+| 💧 **.h2o Smart Water Circuit**| [**`http://localhost:8002`**](http://localhost:8002) | `dle-circuit.arkansas.h2o:8002` | 14,200 bpd brine throughput, 385 ppm Li DLE sorption kinetics, 803.1 kg/day Li, 850 kW geothermal ORC power |
+| ⚡ **Dual-Domain Gateway** | [**`http://localhost:8000`**](http://localhost:8000) | `mission-control.gateway:8000` | Unified split-screen mission control linking the .oil barrier to the .h2o recovery circuit |
+
+**Launch / Verify Locally:**
+```bash
+python serve_domains.py
+```
 
 ---
 
