@@ -134,6 +134,7 @@ A scheduled CI/CD agent ([`.github/workflows/junior_researcher.yml`](.github/wor
 | **Social Impact & Advocacy** | Transatlantic MENA energy diplomacy, de-stigmatization, and Caregivers in Science | [`advocacy/README.md`](advocacy/README.md) |
 | **Funding & Financial Engines** | Strategic resourcing portfolio (James Watt Scholarship, UKRI, UAE Consortia, NSF, Caregivers to PhD) | [`funding/README.md`](funding/README.md) |
 | **Research Forecast & Roadmap** | 3.5-Year operational chronicle, 4 W's matrix (Who, Where, When, What), and story narrative | [`forecast/README.md`](forecast/README.md) |
+| **Publications & Google Scholar** | Working paper series, preprint archive, automated PDF compiler, and Google Scholar profile | [`publications/README.md`](publications/README.md) |
 | **Telemetry Diagnostic Brief** | Real-time diagnostic briefing produced by the autonomous Python agent | [`radar/latest_telemetry_diagnostic.md`](radar/latest_telemetry_diagnostic.md) |
 
 ---
