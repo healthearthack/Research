@@ -76,5 +76,6 @@ career/
 
 ## 🔗 Quick Navigation Links
 * 🏠 **[Repository Home (`README.md`)](../README.md)**
+* 💰 **[Strategic Funding Portfolio (`funding/README.md`)](../funding/README.md)**
 * 📄 **[Statement of Purpose (`proposal/statement_of_purpose.md`)](../proposal/statement_of_purpose.md)**
 * 📡 **[Latest Automated Policy Brief (`radar/latest_intelligence_brief.md`)](../radar/latest_intelligence_brief.md)**

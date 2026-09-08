@@ -127,6 +127,7 @@ A scheduled CI/CD agent ([`.github/workflows/junior_researcher.yml`](.github/wor
 | **Career Opportunity Index** | Comparative matrix of target roles, funding vehicles, and leverage points across all folders | [`career/index.md`](career/index.md) |
 | **The Research Workbench** | "The Tools to Make the Engine": digital twin testbeds, SCADA evaluators, and radar | [`tools/README.md`](tools/README.md) |
 | **Social Impact & Advocacy** | Transatlantic MENA energy diplomacy, de-stigmatization, and Caregivers in Science | [`advocacy/README.md`](advocacy/README.md) |
+| **Funding & Financial Engines** | Strategic resourcing portfolio (James Watt Scholarship, UKRI, UAE Consortia, NSF, Caregivers to PhD) | [`funding/README.md`](funding/README.md) |
 | **Telemetry Diagnostic Brief** | Real-time diagnostic briefing produced by the autonomous Python agent | [`radar/latest_telemetry_diagnostic.md`](radar/latest_telemetry_diagnostic.md) |
 
 ---
