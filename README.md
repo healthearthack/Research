@@ -10,7 +10,7 @@
 
 > ### أهلاً وسهلاً، اسمي آندي | Ahlan wa Sahlan, Ismi Andy
 > **"Uniting Subsurface GeoEnergy Systems, Industrial OT Cybersecurity, and Transatlantic Clean Energy Diplomacy across Heriot-Watt Dubai & Edinburgh."**  
-> *U.S. Department of Defense Project GO Arabic Scholar (Morocco) • Air Force ROTC Alumnus • Energy, EngD Candidate (App ID: 9535a9e2)*
+> *Atmospheric Scientist • U.S. Department of Defense Project GO Arabic Scholar (Morocco) • Air Force ROTC Alumnus • Energy, EngD Candidate (App ID: 9535a9e2)*
 
 **Doctor of Engineering in Energy (`Energy, EngD`) | January 2027 Intake**  
 **Host Department:** Institute of GeoEnergy Engineering (IGE) & School of Mathematical and Computer Sciences (MACS)  
