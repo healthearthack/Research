@@ -34,6 +34,15 @@ METADATA = {
         "server": "EarthArXiv / ESS Open Archive",
         "journal": "Environmental Research Letters",
         "date": "September 2026",
+    },
+    "WP04_Edge_To_Wellhead_Cyber_Physical_Synthesis": {
+        "title": "From Edge to Wellhead: Translating Software-Defined Telemetry and Industrial IoT into Resilient Subsurface GeoEnergy Systems",
+        "authors": "Andrew C. Kieckhefer",
+        "affiliations": "Institute of GeoEnergy Engineering, Heriot-Watt University, Edinburgh EH14 4AS, UK<br>Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison, Madison, WI 53706, USA",
+        "email": "weather.amazon.go@gmail.com | andy.kieckhefer@gmail.com",
+        "server": "EarthArXiv",
+        "journal": "IEEE Internet of Things Magazine / Applied Energy",
+        "date": "September 2026",
     }
 }
 

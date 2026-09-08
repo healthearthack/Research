@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From Edge to Wellhead: Translating Software-Defined Telemetry and Industrial IoT into Resilient Subsurface GeoEnergy Systems</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 20mm 18mm 22mm 18mm;
+            @top-right {
+                content: "PREPRINT / WORKING PAPER SERIES";
+                font-family: 'Times New Roman', serif;
+                font-size: 8pt;
+                color: #555;
+            }
+            @bottom-center {
+                content: "Page " counter(page);
+                font-family: 'Times New Roman', serif;
+                font-size: 9pt;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Times New Roman', Times, 'Georgia', serif;
+            font-size: 10.5pt;
+            line-height: 1.45;
+            color: #111;
+            margin: 0;
+            padding: 24px;
+            background: #fff;
+        }
+        .coversheet {
+            page-break-after: always;
+            padding: 20px 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        .coversheet-header {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #0284c7;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 8px;
+        }
+        .coversheet-rule {
+            border-top: 3px solid #0284c7;
+            margin-bottom: 28px;
+        }
+        .coversheet-title {
+            font-size: 19pt;
+            font-weight: 800;
+            line-height: 1.3;
+            color: #0f172a;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+        .coversheet-meta {
+            font-size: 10.5pt;
+            line-height: 1.65;
+            color: #1e293b;
+            margin-bottom: 24px;
+        }
+        .coversheet-box {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 6px solid #0284c7;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+        .coversheet-box h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #0f172a;
+            font-size: 12pt;
+        }
+        .coversheet-box p {
+            margin: 6px 0;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #1e293b;
+        }
+        .coversheet-footer {
+            margin-top: 36px;
+            font-size: 9pt;
+            line-height: 1.6;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 16px;
+        }
+        .banner {
+            background: #f1f5f9;
+            border-left: 4px solid #0284c7;
+            padding: 8px 14px;
+            font-size: 9pt;
+            color: #334155;
+            margin-bottom: 24px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        h1 {
+            font-size: 18pt;
+            font-weight: bold;
+            line-height: 1.25;
+            margin-bottom: 12px;
+            color: #0f172a;
+            text-align: center;
+        }
+        h2 {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 22px;
+            margin-bottom: 8px;
+            color: #1e293b;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 3px;
+        }
+        h3 {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 14px;
+            margin-bottom: 6px;
+            color: #334155;
+        }
+        p {
+            margin-bottom: 10px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        blockquote {
+            background: #f8fafc;
+            border-left: 3px solid #64748b;
+            margin: 14px 0;
+            padding: 10px 16px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 9pt;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 6px 10px;
+            text-align: left;
+        }
+        th {
+            background: #f1f5f9;
+            font-weight: bold;
+            color: #0f172a;
+        }
+        pre, code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 8.5pt;
+            background: #f8fafc;
+        }
+        pre {
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            padding: 10px 14px;
+            overflow-x: auto;
+            line-height: 1.35;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 18px 0;
+        }
+        ul, ol {
+            margin: 8px 0 12px 20px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="coversheet">
+            <div class="coversheet-header">EarthArXiv PREPRINT SERIES &bull; COVERSHEET</div>
+            <div class="coversheet-rule"></div>
+            <div class="coversheet-title">From Edge to Wellhead: Translating Software-Defined Telemetry and Industrial IoT into Resilient Subsurface GeoEnergy Systems</div>
+            
+            <div class="coversheet-meta">
+                <p><strong>Authors:</strong> Andrew C. Kieckhefer</p>
+                <p><strong>Affiliations:</strong><br>Institute of GeoEnergy Engineering, Heriot-Watt University, Edinburgh EH14 4AS, UK<br>Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison, Madison, WI 53706, USA</p>
+                <p><strong>Corresponding Author Email:</strong> <code>weather.amazon.go@gmail.com | andy.kieckhefer@gmail.com</code></p>
+            </div>
+
+            <div class="coversheet-box">
+                <h3>Preprint Status & Peer Review Statement</h3>
+                <p><strong>Preprint Status:</strong> This is a non-peer reviewed preprint submitted to <strong>EarthArXiv</strong>.</p>
+                <p><strong>Peer Review Status:</strong> This manuscript has been submitted to <em>IEEE Internet of Things Magazine / Applied Energy</em> for peer review.</p>
+            </div>
+
+            <div class="coversheet-footer">
+                <p><strong>License:</strong> Distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0) License</a>.</p>
+                <p><strong>Repository Code & Data:</strong> <a href="https://github.com/healthearthack/Research">https://github.com/healthearthack/Research</a></p>
+                <p><strong>Publication Date:</strong> September 2026</p>
+            </div>
+        </div>
+        
+    <div class="banner">
+        <strong>ACADEMIC PREPRINT SERIES</strong> | Author: Andrew C. Kieckhefer | Google Scholar Anchor: <code>weather.amazon.go@gmail.com</code> | Heriot-Watt University & UW–Madison
+    </div>
+    <h1>From Edge to Wellhead: Translating Software-Defined Telemetry and Industrial IoT into Resilient Subsurface GeoEnergy Systems</h1>
+<p><strong>Andrew C. Kieckhefer</strong>¹<em><br />
+¹ </em>Institute of GeoEnergy Engineering, School of Energy, Geoscience, Infrastructure and Society, Heriot-Watt University, Edinburgh EH14 4AS, UK<em><br />
+</em> <em>Corresponding Author / Google Scholar Anchor:</em> <code>weather.amazon.go@gmail.com</code> | <code>andy.kieckhefer@gmail.com</code><br />
+<em>Undergraduate Lineage:</em> Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison, Madison, WI 53706, USA  </p>
+<p><strong>Target Journal:</strong> <em>IEEE Internet of Things Magazine</em> / <em>Applied Energy</em> (Survey &amp; Synthesis)<br />
+<strong>Preprint Repository:</strong> EarthArXiv | DOI: <code>Pending Deposit</code><br />
+<strong>Date:</strong> September 2026  </p>
+<hr />
+<h2>Abstract</h2>
+<p>The modern energy transition is demanding an unprecedented convergence between two historically isolated engineering disciplines: <strong>Information Technology (Computer Science &amp; Networking)</strong> and <strong>Operational Technology (Subsurface GeoEnergy &amp; Chemical Engineering)</strong>. As the global battery supply chain pivots toward domestic Direct Lithium Extraction (DLE) from late-life continental petroleum brines (such as the Smackover Formation), industrial facilities must co-produce high-temperature ($120–145^\circ\text{C}$), high-pressure ($&gt;4,000\text{ psi}$) formation fluids without triggering catastrophic wellhead failure, casing breaches, or unmitigated fugitive emissions. Transmitting raw high-frequency sensory data across distant cloud architectures creates unacceptable network latency and single-point cyber vulnerabilities. This paper provides an accessible, foundational synthesis of modern cyber-physical network architectures—specifically <strong>Edge Computing</strong>, <strong>Industrial Internet of Things (IIoT)</strong>, and <strong>Software-Defined Networking (SDN)</strong>—and constructs a direct translation bridge into subsurface energy systems. We demystify how decentralized compute nodes execute sub-millisecond safety logic at the machine interface, how containerized microservices dynamically reroute telemetry during physical disruptions, and how physics-informed governing equations (Darcy's Law and acoustic impedance) eliminate sensor-spoofing attacks. By translating cutting-edge distributed computing paradigms directly into the operational reality of idle wellbore repurposing and zero-emissions verification under the U.S. Inflation Reduction Act (Section 45X), this work establishes a unified architectural framework for next-generation cyber-physical GeoEnergy infrastructure.</p>
+<p><strong>Keywords:</strong> Industrial IoT, Edge Computing, Software-Defined Networking, Direct Lithium Extraction, Smackover Formation, Wellbore Repurposing, Cyber-Physical Systems, Physics-Informed Anomaly Detection.</p>
+<hr />
+<h2>1. Introduction: The Historic Divide Between Bits and Barrels</h2>
+<p>For over a century, the energy extraction sector was governed exclusively by heavy physical assets: steel casing strings, high-pressure Christmas tree wellheads, centrifugal pump skids, and mechanical dial gauges. Computational control, when introduced in the late 20th century, operated under a doctrine of absolute <strong>air-gapped isolation</strong>. Legacy field networks relied on simple serial protocols (e.g., Modbus RTU, DNP3) running over point-to-point copper wiring, engineered under the assumption that every connected device was trustworthy.</p>
+<p>Today, this historical isolation has collapsed. The rapid scale-up of low-carbon energy infrastructure—most prominently closed-loop <strong>Direct Lithium Extraction (DLE)</strong>, deep geothermal binary power co-generation, and regional hydrogen transport—demands high-throughput, millisecond-by-millisecond operational intelligence. Field engineers cannot optimize complex chemical elution kinetics or balance high-salinity injection pressures through periodic manual inspections.</p>
+<pre><code>HISTORICAL PARADIGM: Static &amp; Air-Gapped        EMERGING PARADIGM: Unified Cyber-Physical
+┌────────────────────────────────────────┐      ┌────────────────────────────────────────┐
+│ Mechanical Extraction Asset            │      │ Subsurface &amp; Surface Wellhead Assets   │
+│ • Isolated analog dials &amp; manual chokes│      │ • High-frequency acoustic sensors      │
+│ • Zero digital network interfaces      │      │ • Automated electronic choke manifolds │
+│ • Blind to real-time system anomalies  │      └───────────────────┬────────────────────┘
+└────────────────────────────────────────┘                          │
+                                                                    ▼
+                                                ┌────────────────────────────────────────┐
+                                                │ Ruggedized Edge Gateway (Microcloud)   │
+                                                │ • Sub-millisecond determinism (&lt;50 ms) │
+                                                │ • Software-Defined Telemetry (SDN)     │
+                                                │ • Physics-informed mass balance audit  │
+                                                └───────────────────┬────────────────────┘
+                                                                    │ Encrypted WAN Uplink
+                                                                    ▼
+                                                ┌────────────────────────────────────────┐
+                                                │ Regional Cloud Analytics &amp; Compliance  │
+                                                └────────────────────────────────────────┘
+</code></pre>
+<p>However, attempting to bridge this divide by piping raw wellhead telemetry directly into distant hyperscale cloud servers introduces three fatal operational bottlenecks:
+1. <strong>Physical Latency Bottlenecks:</strong> Hydrodynamic fluid hammers and over-pressure events in high-rate injection wells can propagate in under 50 milliseconds. A round-trip telemetry signal traversing field cellular towers to a centralized public cloud facility ($200–500\text{ ms}$) arrives far too late to trigger emergency surface shut-in valves.
+2. <strong>Bandwidth Saturation:</strong> Deploying downhole fiber-optic Distributed Acoustic Sensing (DAS) generates gigabytes of raw data per minute. Streaming continuous raw waveforms over remote satellite or cellular modems is economically and technically unviable.
+3. <strong>Cyber-Physical Attack Surfaces:</strong> Connecting unauthenticated legacy field devices directly to corporate networks exposes high-consequence physical valves to remote sensor-spoofing and man-in-the-middle (MITM) attacks under NIST SP 800-82 guidelines.</p>
+<p>To resolve this impasse, energy engineering must adopt the architectural breakthroughs developed in modern distributed computer science.</p>
+<hr />
+<h2>2. Demystifying the Core Computing Paradigms (In Plain English)</h2>
+<p>To build a resilient bridge, we must first demystify the foundational concepts of modern distributed network engineering:</p>
+<h3>2.1 The Industrial Internet of Things (IIoT)</h3>
+<p>While consumer IoT connects consumer gadgets (smart home appliances, wearables), <strong>IIoT</strong> connects mission-critical industrial machinery. In consumer IoT, a lost data packet results in a minor video buffering delay; in IIoT, a dropped telemetry packet on a chemical dosing pump can cause catastrophic crystallization of lithium adsorbents, ruining tens of millions of dollars of processing equipment. IIoT demands deterministic transmission, hardware ruggedization ($-40^\circ\text{C to }+85^\circ\text{C}$), and non-negotiable fault tolerance.</p>
+<h3>2.2 Edge and Fog Computing</h3>
+<p>Rather than treating compute power as an external, distant utility, <strong>Edge Computing</strong> shifts processing power directly onto the physical asset skid. By embedding ruggedized micro-servers directly adjacent to the wellhead manifold, computation occurs at the exact geographical point of physical action:
+* <strong>Immediate Local Decision-Making:</strong> Critical safety trip logic executes in sub-millisecond intervals, completely independent of whether the field's external internet connection is operational.
+* <strong>Edge Data Reduction:</strong> High-frequency acoustic and vibration streams are processed locally using edge filters; only synthesized health metrics and detected anomalies are transmitted upstream to corporate dashboards.
+* <strong>Air-Gap Emulation (Zero-Trust Edge):</strong> The edge node serves as an intelligent cryptographic firewall, insulating vulnerable legacy serial devices from external IP networks.</p>
+<h3>2.3 Software-Defined Networking (SDN) &amp; Telemetry Rerouting</h3>
+<p>In traditional industrial networking, switches and routers forward packets based on fixed, burned-in hardware configurations. If a physical communication line is severed or saturated, the connection fails.</p>
+<p><strong>Software-Defined Networking (SDN)</strong> separates the <em>control plane</em> (the intelligent software controller that determines traffic paths) from the <em>data plane</em> (the physical hardware switches that forward packets). As established in foundational literature on industrial edge QoS and software-defined architectures (Chrysoulas et al., 2020; Chrysoulas &amp; Gialelis, 2021):
+* The SDN controller maintains an overarching, programmatic view of the entire field network.
+* If sensor line telemetry experiences electromagnetic interference, physical degradation, or active adversarial jamming, the SDN controller instantly rewrites routing rules in real time, steering critical safety packets across redundant communication pathways without human intervention.</p>
+<hr />
+<h2>3. The Translation Bridge: Where Software Microservices Meet Subsurface Physics</h2>
+<p>The central insight of this synthesis is that <strong>software architecture alone cannot secure physical infrastructure</strong>. An advanced edge algorithm or SDN controller will fail if it does not understand the governing physical laws of the physical process it manages.</p>
+<pre><code>┌────────────────────────────────────────────────────────────────────────┐
+│                   UNIFIED EDGE-SUBSURFACE CONTROLLER                   │
+│                                                                        │
+│   ┌────────────────────┐ ┌────────────────────┐ ┌────────────────────┐ │
+│   │ Telemetry Ingest   │ │ Physics-Informed   │ │ SDN Dynamic Flow   │ │
+│   │ Container (Modbus) │ │ Governing Filter   │ │ Controller         │ │
+│   │ • Register polling │ │ • Darcy's Law audit│ │ • Traffic reroute  │ │
+│   │ • Syntax checking  │ │ • Hydrodynamics    │ │ • Fault isolation  │ │
+│   └─────────┬──────────┘ └─────────▲──────────┘ └─────────┬──────────┘ │
+│             │                      │                      │            │
+│             └──────────────────────┴──────────────────────┘            │
+│                              Local IPC Bus                             │
+└────────────────────────────────────┬───────────────────────────────────┘
+                                     │ Deterministic Output (&lt;50 ms)
+                                     ▼
+                     Physical Surface Choke Manifold
+</code></pre>
+<p>By deploying lightweight, containerized <strong>microservices</strong> (isolated software modules running on Linux containers directly at the wellhead edge), the system executes a three-stage cyber-physical loop:
+1. <strong>Telemetry Ingestion:</strong> Receives raw sensor packets across field communication protocols.
+2. <strong>Physics-Informed Verification:</strong> Cross-checks reported sensor values against first-principles physics. For example, if a surface pressure sensor reports a sudden drop while acoustic vibration confirms high flow, the edge filter calculates whether that pressure state violates mass conservation. If the numbers are physically impossible, the system identifies a sensor-spoofing attack or mechanical transducer failure and flags it instantly.
+3. <strong>Dynamic Control &amp; Isolation:</strong> The SDN controller immediately reroutes critical control telemetry to redundant backup sensors, preventing an automated emergency shutdown from halting facility operations unnecessarily.</p>
+<hr />
+<h2>4. Direct Application to Next-Generation GeoEnergy Focus Areas</h2>
+<p>How does this distributed cyber-physical architecture revolutionize real-world energy systems? We examine three direct applications:</p>
+<h3>4.1 Repurposing Mature Petroleum Wellbores for Direct Lithium Extraction (DLE)</h3>
+<p>In continental basins such as the <strong>Upper Jurassic Smackover Formation</strong> (Arkansas, Louisiana, Texas), mature oil and gas wells are being repurposed to extract lithium-rich hydrothermal brines ($150–500\text{ ppm Li}^+$ at depths exceeding 9,000 ft TVD). 
+* <strong>Operational Challenge:</strong> Operators must pump up to 15,000 barrels per day of corrosive brine at $120–145^\circ\text{C}$ through legacy casing strings, pass the brine through chemical adsorption columns, and reinject the depleted brine under immense pressure.
+* <strong>The Edge Solution:</strong> Containerized edge microservices monitor pressure transients across the casing annular space, continuously validating wellbore structural integrity and adjusting surface choke valves to prevent scaling and casing shear without costly manual oversight.</p>
+<h3>4.2 Autonomous Optimization of Surface Extraction Skids</h3>
+<p>DLE facilities rely on aluminum-based layered double hydroxide (LDH) or ion-exchange sorbent columns that require precise fluid temperatures ($50–80^\circ\text{C}$) to achieve 90%+ lithium recovery.
+* By placing edge nodes on each extraction skid, the facility dynamically modulates the upstream Organic Rankine Cycle (ORC) binary power generator, harvesting excess geothermal heat to generate zero-carbon electricity while cooling the brine to the exact optimal temperature for mineral adsorption.</p>
+<h3>4.3 Spaceborne-to-Subsurface MRV for IRA Section 45X Tax Credits</h3>
+<p>Under the U.S. Inflation Reduction Act (IRA Section 45X and Section 30D), lithium producers qualify for tier-1 domestic clean energy tax subsidies only if they empirically demonstrate zero fugitive methane emissions.
+* <strong>The Multiscale Bridge:</strong> Orbital satellite spectrometry (Sentinel-5P TROPOMI and NASA TEMPO) detects regional atmospheric columns ($5.5 \times 3.5\text{ km}^2$). Meanwhile, edge microcontrollers on wellhead pads digest localized laser open-path detectors and fiber-optic DAS acoustics. The edge gateway cryptographically signs and aggregates this data, generating a tamper-evident compliance ledger that proves total environmental integrity to federal regulators.</p>
+<hr />
+<h2>5. Conclusion &amp; The Collaborative Research Horizon</h2>
+<p>The historic boundary between the <strong>computer scientist</strong> writing distributed networking algorithms and the <strong>geoenergy engineer</strong> managing subsurface fluid hydrodynamics is no longer viable. The future of sustainable resource extraction, critical mineral independence, and deep decarbonization depends upon their synthesis.</p>
+<p>By deploying robust edge computing nodes, software-defined telemetry routing, and physics-informed cyber-physical anomaly detection directly at the wellhead, we transform aging, hazardous petroleum liabilities into highly automated, resilient, and zero-emissions mineral extraction infrastructure. This work provides the architectural blueprint for an interdisciplinary research agenda uniting distributed computing and geoenergy engineering.</p>
+<hr />
+<h2>References &amp; Foundational Literature</h2>
+<ol>
+<li><strong>Chrysoulas, C.</strong>, et al. (2020). <em>Architectures and Quality of Service (QoS) Provisioning in Software-Defined Industrial Networks and Edge Computing Environments.</em> IEEE Transactions on Industrial Informatics, 16(8), 5120–5132.</li>
+<li><strong>Chrysoulas, C.</strong>, &amp; Gialelis, J. (2021). <em>Microservice-Oriented Frameworks for Cyber-Physical Systems: Bridging the Edge-to-Cloud Continuum in Modern Smart Infrastructures.</em> Proceedings of the ACM/IEEE International Conference on Connected Systems and Industrial Internet of Things.</li>
+<li><strong>Kieckhefer, A. C.</strong> (2026). <em>Direct Lithium Extraction (DLE) from Continental Petroleum Brines: Repurposing Late-Life Wellbores for Closed-Loop Battery Mineral Recovery.</em> EarthArXiv Preprints. DOI: Pending Deposit.</li>
+<li><strong>Kieckhefer, A. C.</strong> (2026). <em>Physics-Informed Anomaly Detection in Upstream SCADA Networks: Mitigating Sensor Spoofing in High-Pressure Hydrothermal Wellheads.</em> EarthArXiv Preprints. DOI: Pending Deposit.</li>
+<li><strong>Kieckhefer, A. C.</strong> (2026). <em>Coupling Spaceborne Trace Gas Spectrometry with Wellhead Distributed Acoustic Sensing for IRA 45X Zero-Emissions Verification.</em> EarthArXiv Preprints. DOI: Pending Deposit.</li>
+<li><strong>National Institute of Standards and Technology (NIST)</strong> (2023). <em>Guide to Operational Technology (OT) Security.</em> NIST Special Publication 800-82, Revision 3.</li>
+<li><strong>United States Geological Survey (USGS)</strong> (2024). <em>Evaluation of the Lithium Resource Potential within the Smackover Formation, Gulf Coast Basin, USA.</em> Scientific Investigations Report.</li>
+</ol>
+</body>
+</html>
