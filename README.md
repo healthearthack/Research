@@ -125,6 +125,7 @@ A scheduled CI/CD agent ([`.github/workflows/junior_researcher.yml`](.github/wor
 | **BibTeX Citations** | Standardized LaTeX / Zotero citation library | [`references/references.bib`](references/references.bib) |
 | **Post-Doctoral Target Lines** | Modular career launchpad & bridge dossiers (The Holloway Group, Heriot-Watt, NOAA, Shell) | [`career/README.md`](career/README.md) |
 | **Career Opportunity Index** | Comparative matrix of target roles, funding vehicles, and leverage points across all folders | [`career/index.md`](career/index.md) |
+| **The Research Workbench** | "The Tools to Make the Engine": digital twin testbeds, SCADA evaluators, and radar | [`tools/README.md`](tools/README.md) |
 | **Telemetry Diagnostic Brief** | Real-time diagnostic briefing produced by the autonomous Python agent | [`radar/latest_telemetry_diagnostic.md`](radar/latest_telemetry_diagnostic.md) |
 
 ---
