@@ -7,6 +7,36 @@ DRAFTS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "publicati
 DIST_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "publications", "dist")
 os.makedirs(DIST_DIR, exist_ok=True)
 
+METADATA = {
+    "WP01_DLE_Wellbore_Repurposing_Review": {
+        "title": "Direct Lithium Extraction (DLE) from Continental Petroleum Brines: Repurposing Late-Life Wellbores for Closed-Loop Battery Mineral Recovery",
+        "authors": "Andrew C. Kieckhefer",
+        "affiliations": "Institute of GeoEnergy Engineering, Heriot-Watt University, Edinburgh EH14 4AS, UK<br>Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison, Madison, WI 53706, USA",
+        "email": "weather.amazon.go@gmail.com | andy.kieckhefer@gmail.com",
+        "server": "EarthArXiv",
+        "journal": "Applied Energy",
+        "date": "September 2026",
+    },
+    "WP02_OT_Cybersecurity_SCADA_Telemetry": {
+        "title": "Physics-Informed Anomaly Detection in Upstream SCADA Networks: Mitigating Sensor Spoofing in High-Pressure Hydrothermal Wellheads",
+        "authors": "Andrew C. Kieckhefer, Dr. Christos Chrysoulas",
+        "affiliations": "Institute of GeoEnergy Engineering & School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh & Dubai<br>Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison",
+        "email": "weather.amazon.go@gmail.com | andy.kieckhefer@gmail.com",
+        "server": "TechRxiv",
+        "journal": "IEEE Transactions on Industrial Informatics",
+        "date": "September 2026",
+    },
+    "WP03_Satellite_Subsurface_Emissions_Coupling": {
+        "title": "Coupled Satellite InSAR and Deep Subsurface Geomechanics for Induced Seismicity Forecasting in Industrial High-Rate Disposal Formations",
+        "authors": "Andrew C. Kieckhefer",
+        "affiliations": "Institute of GeoEnergy Engineering, Heriot-Watt University, Edinburgh EH14 4AS, UK<br>Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison, Madison, WI 53706, USA",
+        "email": "weather.amazon.go@gmail.com | andy.kieckhefer@gmail.com",
+        "server": "EarthArXiv / ESS Open Archive",
+        "journal": "Journal of Geophysical Research: Solid Earth",
+        "date": "September 2026",
+    }
+}
+
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +67,65 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             margin: 0;
             padding: 24px;
             background: #fff;
+        }}
+        .coversheet {{
+            page-break-after: always;
+            padding: 20px 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }}
+        .coversheet-header {{
+            font-size: 11pt;
+            font-weight: 700;
+            color: #0284c7;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 8px;
+        }}
+        .coversheet-rule {{
+            border-top: 3px solid #0284c7;
+            margin-bottom: 28px;
+        }}
+        .coversheet-title {{
+            font-size: 19pt;
+            font-weight: 800;
+            line-height: 1.3;
+            color: #0f172a;
+            margin-bottom: 24px;
+            text-align: left;
+        }}
+        .coversheet-meta {{
+            font-size: 10.5pt;
+            line-height: 1.65;
+            color: #1e293b;
+            margin-bottom: 24px;
+        }}
+        .coversheet-box {{
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 6px solid #0284c7;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }}
+        .coversheet-box h3 {{
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #0f172a;
+            font-size: 12pt;
+        }}
+        .coversheet-box p {{
+            margin: 6px 0;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #1e293b;
+        }}
+        .coversheet-footer {{
+            margin-top: 36px;
+            font-size: 9pt;
+            line-height: 1.6;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 16px;
         }}
         .banner {{
             background: #f1f5f9;
@@ -126,6 +215,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </style>
 </head>
 <body>
+    {coversheet}
     <div class="banner">
         <strong>ACADEMIC PREPRINT SERIES</strong> | Author: Andrew C. Kieckhefer | Google Scholar Anchor: <code>weather.amazon.go@gmail.com</code> | Heriot-Watt University & UW–Madison
     </div>
@@ -163,6 +253,42 @@ def build():
         html_out = os.path.join(DIST_DIR, f"{basename}.html")
         pdf_out = os.path.join(DIST_DIR, f"{basename}.pdf")
 
+        meta = METADATA.get(basename, {
+            "title": basename.replace("_", " "),
+            "authors": "Andrew C. Kieckhefer",
+            "affiliations": "Heriot-Watt University & UW–Madison AOS",
+            "email": "weather.amazon.go@gmail.com",
+            "server": "EarthArXiv",
+            "journal": "Applied Energy",
+            "date": "September 2026",
+        })
+
+        coversheet_html = f"""
+        <div class="coversheet">
+            <div class="coversheet-header">{meta['server']} PREPRINT SERIES &bull; COVERSHEET</div>
+            <div class="coversheet-rule"></div>
+            <div class="coversheet-title">{meta['title']}</div>
+            
+            <div class="coversheet-meta">
+                <p><strong>Authors:</strong> {meta['authors']}</p>
+                <p><strong>Affiliations:</strong><br>{meta['affiliations']}</p>
+                <p><strong>Corresponding Author Email:</strong> <code>{meta['email']}</code></p>
+            </div>
+
+            <div class="coversheet-box">
+                <h3>Preprint Status & Peer Review Statement</h3>
+                <p><strong>Preprint Status:</strong> This is a non-peer reviewed preprint submitted to <strong>{meta['server']}</strong>.</p>
+                <p><strong>Peer Review Status:</strong> This manuscript has been submitted to <em>{meta['journal']}</em> for peer review.</p>
+            </div>
+
+            <div class="coversheet-footer">
+                <p><strong>License:</strong> Distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0) License</a>.</p>
+                <p><strong>Repository Code & Data:</strong> <a href="https://github.com/healthearthack/Research">https://github.com/healthearthack/Research</a></p>
+                <p><strong>Publication Date:</strong> {meta['date']}</p>
+            </div>
+        </div>
+        """
+
         with open(path, "r", encoding="utf-8") as f:
             md_text = f.read()
 
@@ -171,12 +297,12 @@ def build():
             extensions=["tables", "fenced_code", "attr_list", "def_list"]
         )
 
-        title = basename.replace("_", " ")
-        full_html = HTML_TEMPLATE.format(title=title, content=html_body)
+        title = meta["title"]
+        full_html = HTML_TEMPLATE.format(title=title, coversheet=coversheet_html, content=html_body)
 
         with open(html_out, "w", encoding="utf-8") as f:
             f.write(full_html)
-        print(f"[OK] Generated HTML: {html_out}")
+        print(f"[OK] Generated HTML with Page 1 Coversheet: {html_out}")
 
         if browser:
             cmd = [
@@ -191,7 +317,7 @@ def build():
                 subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                 if os.path.exists(pdf_out):
                     size = os.path.getsize(pdf_out)
-                    print(f"[OK] Generated PDF: {pdf_out} ({size:,} bytes)")
+                    print(f"[OK] Generated Compliant PDF: {pdf_out} ({size:,} bytes)")
                 else:
                     print(f"[!] PDF file not generated: {pdf_out}")
             except Exception as e:
@@ -201,3 +327,4 @@ def build():
 
 if __name__ == "__main__":
     build()
+
