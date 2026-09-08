@@ -6,6 +6,9 @@
 **Institutional Anchor:** Heriot-Watt University Dubai Campus & Institute of GeoEnergy Engineering (IGE)  
 **Academic Background:** Project GO Arabic Language Immersion & Air Force ROTC (University of Wisconsin–Madison)  
 
+> ### أهلاً وسهلاً بكم في جسر الطاقة النظيفة | Ahlan wa Sahlan bikum
+> *"Building enduring economic partnership, mutual cultural respect, and technical collaboration between American basins and Middle Eastern clean energy leaders."*
+
 ---
 
 ## 1. Executive Mission: Rejecting Stigmas, Embracing Partnership

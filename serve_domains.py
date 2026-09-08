@@ -133,6 +133,19 @@ WEBSITE_OIL_HTML = """<!DOCTYPE html>
             <a href="http://website.h2o" class="btn">💧 Launch website.h2o (or Port 8001) →</a>
         </div>
     </div>
+
+    <div style="margin-top: 18px; padding: 14px 20px; background: #0f172a; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border: 1px solid #334155; font-size: 13px;">
+        <div style="display: flex; gap: 16px; align-items: center;">
+            <span style="color: #94a3b8; font-weight: 700;">RESEARCH PORTFOLIO:</span>
+            <a href="https://github.com/healthearthack/Research/tree/main/funding" target="_blank" style="color: #f59e0b; text-decoration: none; font-weight: 600;">💰 Funding Engines</a>
+            <a href="https://github.com/healthearthack/Research/tree/main/career" target="_blank" style="color: #f59e0b; text-decoration: none; font-weight: 600;">🧭 Career Launchpad</a>
+            <a href="https://github.com/healthearthack/Research/tree/main/advocacy" target="_blank" style="color: #f59e0b; text-decoration: none; font-weight: 600;">🤝 Advocacy</a>
+            <a href="https://github.com/healthearthack/Research/tree/main/tools" target="_blank" style="color: #f59e0b; text-decoration: none; font-weight: 600;">🛠️ Tools</a>
+        </div>
+        <div>
+            <span style="background: rgba(245,158,11,0.2); color: #f59e0b; padding: 4px 10px; border-radius: 4px; font-weight: 600;">أهلاً وسهلاً | Dubai & Edinburgh</span>
+        </div>
+    </div>
 </body>
 </html>
 """
@@ -245,6 +258,19 @@ WEBSITE_H2O_HTML = """<!DOCTYPE html>
         </div>
         <div>
             <a href="http://website.oil" class="btn">🛢️ Launch website.oil (or Port 8000) →</a>
+        </div>
+    </div>
+
+    <div style="margin-top: 18px; padding: 14px 20px; background: #031e38; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border: 1px solid #0369a1; font-size: 13px;">
+        <div style="display: flex; gap: 16px; align-items: center;">
+            <span style="color: #7dd3fc; font-weight: 700;">RESEARCH PORTFOLIO:</span>
+            <a href="https://github.com/healthearthack/Research/tree/main/funding" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 600;">💰 Funding Engines</a>
+            <a href="https://github.com/healthearthack/Research/tree/main/career" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 600;">🧭 Career Launchpad</a>
+            <a href="https://github.com/healthearthack/Research/tree/main/advocacy" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 600;">🤝 Advocacy</a>
+            <a href="https://github.com/healthearthack/Research/tree/main/tools" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 600;">🛠️ Tools</a>
+        </div>
+        <div>
+            <span style="background: rgba(56,189,248,0.2); color: #7dd3fc; padding: 4px 10px; border-radius: 4px; font-weight: 600;">أهلاً وسهلاً | Dubai & Edinburgh</span>
         </div>
     </div>
 </body>

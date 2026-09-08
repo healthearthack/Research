@@ -6,7 +6,11 @@
 [![Campus Mobility](https://img.shields.io/badge/Campuses-Dubai%20%28Y1--2%29%20%7C%20Edinburgh%20%28Y3--4%29-D0021B.svg)](https://www.hw.ac.uk/go-global/)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0%20%2F%20MIT-2ea44f.svg)](LICENSE.md)
 
-[![Local TLDs](https://img.shields.io/badge/Local%20TLD%20Portals-.oil%3A8001%20%7C%20.h2o%3A8002-FF6F00.svg)](http://localhost:8000)
+[![Local TLDs](https://img.shields.io/badge/Local%20TLD%20Portals-.oil%3A8000%20%7C%20.h2o%3A8001-FF6F00.svg)](http://localhost:8000)
+
+> ### أهلاً وسهلاً، اسمي آندي | Ahlan wa Sahlan, Ismi Andy
+> **"Uniting Subsurface GeoEnergy Systems, Industrial OT Cybersecurity, and Transatlantic Clean Energy Diplomacy across Heriot-Watt Dubai & Edinburgh."**  
+> *U.S. Department of Defense Project GO Arabic Scholar (Morocco) • Air Force ROTC Alumnus • Energy, EngD Candidate (App ID: 9535a9e2)*
 
 **Doctor of Engineering in Energy (`Energy, EngD`) | January 2027 Intake**  
 **Host Department:** Institute of GeoEnergy Engineering (IGE) & School of Mathematical and Computer Sciences (MACS)  
