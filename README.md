@@ -153,6 +153,7 @@ A scheduled CI/CD agent ([`.github/workflows/junior_researcher.yml`](.github/wor
 | **Research Forecast & Roadmap** | 3.5-Year operational chronicle, 4 W's matrix (Who, Where, When, What), and story narrative | [`forecast/README.md`](forecast/README.md) |
 | **Publications & Google Scholar** | Working paper series, preprint archive, automated PDF compiler, and Google Scholar profile | [`publications/README.md`](publications/README.md) |
 | **The Legal Compass** | Codified statutory & regulatory source of truth (IRC § 45X, SDWA Class II/V, AOGC, NIST SP 800-82) | [`legal/README.md`](legal/README.md) |
+| **The Doctoral Frame Engine** | Reverse-engineered 7-component dissertation library & live telemetry bus (2027–2030) | [`final/components/README.md`](final/components/README.md) |
 | **Telemetry Diagnostic Brief** | Real-time diagnostic briefing produced by the autonomous Python agent | [`radar/latest_telemetry_diagnostic.md`](radar/latest_telemetry_diagnostic.md) |
 
 ---

@@ -1,0 +1,101 @@
+{
+  "project": "Closed-Loop Cyber-Physical GeoEnergy Systems",
+  "degree_target": "Doctor of Engineering in Energy (Energy, EngD)",
+  "institution": "Heriot-Watt University (Dubai & Edinburgh)",
+  "lead_researcher": "Andrew C. Kieckhefer",
+  "overall_dissertation_readiness_pct": 38.5,
+  "last_audit_timestamp": "2026-09-08T06:25:00Z",
+  "components": [
+    {
+      "id": "C01",
+      "slug": "c01_subsurface_hydrochemistry",
+      "title": "Subsurface Hydrochemistry & DLE Adsorption Column Kinetics",
+      "status": "PROTOTYPE_ACTIVE",
+      "readiness_pct": 55.0,
+      "lead_author": "Andrew C. Kieckhefer",
+      "inputs": ["depth_ft", "tds_mg_l", "lithium_grade_ppm"],
+      "outputs": ["brine_rate_bpd", "lithium_recovery_pct", "elution_ph"],
+      "target_journal": "Applied Energy",
+      "linked_working_paper": "WP-01",
+      "statutory_anchor": "AOGC Ark. Code Ann. § 15-76-301"
+    },
+    {
+      "id": "C02",
+      "slug": "c02_wellbore_geomechanics",
+      "title": "Wellbore Geomechanics & Late-Life Casing String Repurposing",
+      "status": "PROTOTYPE_ACTIVE",
+      "readiness_pct": 45.0,
+      "lead_author": "Andrew C. Kieckhefer",
+      "inputs": ["fluid_velocity_fps", "reservoir_pressure_psi", "brine_temperature_c"],
+      "outputs": ["annular_burst_margin_psi", "casing_fatigue_cycles", "pa_cost_avoidance_usd"],
+      "target_journal": "SPE Journal",
+      "linked_working_paper": "WP-01",
+      "statutory_anchor": "Safe Drinking Water Act 40 CFR § 144.6 (Class II/V)"
+    },
+    {
+      "id": "C03",
+      "slug": "c03_cyberphysical_scada_ot",
+      "title": "Physics-Informed Anomaly Detection in Upstream SCADA Telemetry",
+      "status": "BENCHMARK_VALIDATED",
+      "readiness_pct": 60.0,
+      "lead_author": "Andrew C. Kieckhefer",
+      "inputs": ["modbus_registers", "darcy_flux_calc", "acoustic_strain_khz"],
+      "outputs": ["anomaly_flag", "detection_latency_ms", "sdn_reroute_event"],
+      "target_journal": "IEEE Transactions on Industrial Informatics",
+      "linked_working_paper": "WP-02 / WP-04",
+      "statutory_anchor": "NIST Special Publication 800-82 Rev. 3"
+    },
+    {
+      "id": "C04",
+      "slug": "c04_orbital_multiscale_mrv",
+      "title": "Multiscale Orbital Trace Gas & Downhole Acoustic MRV",
+      "status": "PROTOTYPE_ACTIVE",
+      "readiness_pct": 40.0,
+      "lead_author": "Andrew C. Kieckhefer",
+      "inputs": ["tropomi_ch4_column_mol_m2", "tempo_no2_column", "fiber_das_acoustic_hz"],
+      "outputs": ["emissions_rate_kg_hr", "compliance_ledger_hash", "tier1_ira_flag"],
+      "target_journal": "Environmental Research Letters",
+      "linked_working_paper": "WP-03",
+      "statutory_anchor": "EPA GHGRP Subpart W / Clean Air Act § 136"
+    },
+    {
+      "id": "C05",
+      "slug": "c05_geothermal_energy_balance",
+      "title": "Geothermal Binary Organic Rankine Cycle (ORC) Skid Energy Balance",
+      "status": "THEORETICAL_MODEL",
+      "readiness_pct": 30.0,
+      "lead_author": "Andrew C. Kieckhefer",
+      "inputs": ["brine_enthalpy_kj_kg", "ambient_temperature_c", "mass_flow_kg_s"],
+      "outputs": ["net_power_kw", "sorbent_feed_temp_c", "parasitic_load_kwh"],
+      "target_journal": "Geothermics",
+      "linked_working_paper": "WP-01",
+      "statutory_anchor": "DOE Geothermal Technologies Office Guidelines"
+    },
+    {
+      "id": "C06",
+      "slug": "c06_statutory_technoeconomics",
+      "title": "Statutory Technoeconomics & The Legal Compass Engine",
+      "status": "BENCHMARK_VALIDATED",
+      "readiness_pct": 50.0,
+      "lead_author": "Andrew C. Kieckhefer",
+      "inputs": ["capex_usd", "opex_usd_per_kg_lioh", "purity_mass_pct", "methane_tax_usd"],
+      "outputs": ["lcol_usd_per_ton", "ira_45x_credit_usd", "internal_rate_of_return_pct"],
+      "target_journal": "Energy Policy",
+      "linked_working_paper": "legal/README.md",
+      "statutory_anchor": "26 U.S.C. § 45X & Treas. Reg. § 1.45X"
+    },
+    {
+      "id": "C07",
+      "slug": "c07_transatlantic_diplomacy_advocacy",
+      "title": "Transatlantic Clean Energy Diplomacy & Academic Equity Charters",
+      "status": "CHARTERED",
+      "readiness_pct": 35.0,
+      "lead_author": "Andrew C. Kieckhefer",
+      "inputs": ["dod_project_go_arabic_scholarship", "athena_swan_carer_support", "adek_uae_clean_tech"],
+      "outputs": ["mobility_matrix_dubai_edinburgh", "carer_equity_compliance", "bilateral_supply_protocol"],
+      "target_journal": "Nature Energy (Perspectives)",
+      "linked_working_paper": "advocacy/README.md",
+      "statutory_anchor": "UKRI EDI Policy & US DoD Title VI DLNSEO"
+    }
+  ]
+}
