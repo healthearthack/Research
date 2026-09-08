@@ -34,6 +34,7 @@ A primary differentiator of this doctoral candidacy is the candidate's establish
 * **Competitive Merit Selection:** Project GO awards are granted through a rigorous nationwide competition evaluating academic distinction, quantitative discipline, and national service leadership across Air Force, Army, and Navy ROTC programs.
 * **Intensive Language & Cultural Mastery:** The award funded intensive Arabic language, cross-cultural diplomacy, and regional security immersion in Morocco (in collaboration with the University of Minnesota and the University of Wisconsin–Madison).
 * **Strategic Value for Heriot-Watt Dubai (Years 1–2):** Unlike standard international applicants entering the UAE without regional background, Kieckhefer brings verified DoD-sponsored language training and cultural fluency directly to Heriot-Watt’s Dubai campus, providing immediate diplomatic and operational standing when interfacing with Gulf energy consortia (ADEK, ADNOC, Masdar).
+* **Undergraduate Cadet Leadership Distinction:** Recipient of the competitive **Capt. Jeff Hill Legacy Fund Scholarship ($2,000)** through UW–Madison Air Force ROTC Detachment 925, awarded in recognition of academic diligence, moral leadership, and community service.
 * **Security Clearance & Trustworthiness:** 4 consecutive years of Air Force ROTC Aerospace Studies leadership combined with DoD federal vetting provides unassailable integrity for UK **Academic Technology Approval Scheme (ATAS)** verification, export control compliance, and sensitive OT energy infrastructure research.
 
 ---

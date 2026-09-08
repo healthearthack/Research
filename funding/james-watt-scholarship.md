@@ -28,7 +28,7 @@ Applications for the James Watt Scholarship are evaluated on a competitive, univ
 * **Undergraduate Rigor:** Bachelor of Arts in Atmospheric & Oceanic Sciences (AOS) from the **University of Wisconsin–Madison** (133 credits, quantitative STEM).
 * **Equivalency:** Audited as meeting the UK Upper Second-Class Honours (2:1) benchmark under UK NARIC / Ecctis standards.
 * **Continuous Upskilling:** Professional upskilling through **Merit America**, mastering production code version control and modern data engineering pipelines.
-* **Competitive Federal Merit Selection:** Alumnus of the U.S. Department of Defense **Project GO (Global Officer)** Arabic scholarship program and 4-year Air Force ROTC Aerospace Studies leadership sequence.
+* **Competitive Merit Selection:** Recipient of the competitive **Capt. Jeff Hill Legacy Fund Scholarship ($2,000)** (UW–Madison Air Force ROTC Detachment 925) and the U.S. Department of Defense **Project GO (Global Officer)** Arabic scholarship program, demonstrating a sustained history of peer-reviewed merit selection.
 
 ### B. Strategic Impact & Novelty of Research
 * **The Critical Gap:** Converting mature oilfield infrastructure into closed-loop co-production hubs for battery-grade lithium (Smackover DLE) and geothermal heat.
