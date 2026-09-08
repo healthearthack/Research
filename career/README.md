@@ -13,6 +13,9 @@ Each directory contains:
 1. **`README.md`:** The strategic posture, target role, institutional leverage, and funding vehicles.
 2. **`bridge_*.md`:** The concrete **bridge document**—an empirical research prospectus, technoeconomic case, or operational framework that builds the actual bridge to working in that capacity.
 
+> [!TIP]
+> For a side-by-side comparative matrix of all target roles, funding vehicles, and leverage points, consult the **[Strategic Career Index (`career/index.md`)](index.md)**.
+
 ```
 career/
 ├── The-Holloway-Group/             # 🏆 The Academic Prize: NASA HAQAST / Space-to-Subsurface

@@ -64,6 +64,7 @@ This repository operates an automated, scheduled CI/CD agent ([`.github/workflow
 | **Annotated Bibliography** | 8-part foundational literature review (USGS 2024, DOE, Kumar DLE, NIST SP 800-82r3, SPE-21820) | [`references/annotated_bibliography.md`](references/annotated_bibliography.md) |
 | **BibTeX Citations** | Standardized LaTeX / Zotero citation library | [`references/references.bib`](references/references.bib) |
 | **Post-Doctoral Target Lines** | Modular career launchpad & bridge dossiers (The Holloway Group, Heriot-Watt, NOAA, Shell) | [`career/README.md`](career/README.md) |
+| **Career Opportunity Index** | Comparative matrix of target roles, funding vehicles, and leverage points across all folders | [`career/index.md`](career/index.md) |
 
 ---
 
