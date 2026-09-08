@@ -16,17 +16,16 @@
 
 ---
 
-## 🌐 Active Locally Hosted TLD Portals (`.oil` & `.h2o`)
+## 🌐 Active Locally Hosted TLD Portals (`website.oil:8000` & `website.h2o:8001`)
 
-This research dossier establishes an operational, locally hosted dual-domain digital twin architecture serving real-time SCADA telemetry across dedicated ports:
+This research dossier operates two live local web portals running with active SCADA telemetry and **Open Research Requisitions ("Help Wanted")**:
 
-| Domain Portal | Local Address | Digital Twin Host | Operational Scope |
+| Domain Portal | Local Host Address | Scope & Requisitions ("Help Wanted") | Status |
 | :--- | :--- | :--- | :--- |
-| 🛢️ **.oil Wellhead Barrier** | [**`http://localhost:8001`**](http://localhost:8001) | `wellbore-01.smackover.oil:8001` | Annular casing pressure (842.1 psi), fiber DAS acoustic strain (1.45 kHz), cement barrier integrity, NIST SP 800-82 isolation |
-| 💧 **.h2o Smart Water Circuit**| [**`http://localhost:8002`**](http://localhost:8002) | `dle-circuit.arkansas.h2o:8002` | 14,200 bpd brine throughput, 385 ppm Li DLE sorption kinetics, 803.1 kg/day Li, 850 kW geothermal ORC power |
-| ⚡ **Dual-Domain Gateway** | [**`http://localhost:8000`**](http://localhost:8000) | `mission-control.gateway:8000` | Unified split-screen mission control linking the .oil barrier to the .h2o recovery circuit |
+| 🛢️ **website.oil:8000** | [**`http://localhost:8000`**](http://localhost:8000) | **Subsurface Barrier & Mechanical Integrity**<br>• Casing Pressure ($842.1\text{ psi}$) & DAS Strain ($1.45\text{ kHz}$)<br>• **OIL-01:** OT Threat & SCADA Telemetry Lead<br>• **OIL-02:** Wellbore Geomechanics & Casing Specialist<br>• **OIL-03:** Satellite Methane Remote Sensing Analyst | 🟢 **ONLINE** |
+| 💧 **website.h2o:8001** | [**`http://localhost:8001`**](http://localhost:8001) | **Hydrothermal Brine & Smart Water Circuit**<br>• $14,200\text{ bpd}$ Brine, $385\text{ ppm Li}$, $850\text{ kW}$ Geothermal<br>• **H2O-01:** DLE Chemical Process Engineer<br>• **H2O-02:** Smart Water SCADA & Reinjection Lead<br>• **H2O-03:** Geothermal Binary ORC Engineer | 🟢 **ONLINE** |
 
-**Launch / Verify Locally:**
+**Run / Restart Locally:**
 ```bash
 python serve_domains.py
 ```
