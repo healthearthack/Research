@@ -332,8 +332,179 @@ def build():
             except Exception as e:
                 print(f"[ERR] Failed to render PDF for {basename}: {e}")
 
+    generate_index_portal()
     print("[*] Compilation process complete.")
+
+def generate_index_portal():
+    index_file = os.path.join(DIST_DIR, "index.html")
+    cards = []
+    
+    for key, meta in METADATA.items():
+        pdf_name = f"{key}.pdf"
+        html_name = f"{key}.html"
+        cards.append(f"""
+        <div class="pub-card">
+            <div class="pub-badge">{meta['server']} &bull; {meta['date']}</div>
+            <h2 class="pub-title">{meta['title']}</h2>
+            <div class="pub-authors"><strong>Author:</strong> {meta['authors']}</div>
+            <div class="pub-affil"><em>{meta['affiliations'].replace('<br>', ' &bull; ')}</em></div>
+            <div class="pub-target">Target Journal: <strong>{meta['journal']}</strong></div>
+            <div class="pub-actions">
+                <a class="btn btn-pdf" href="{pdf_name}" target="_blank">📄 Download PDF</a>
+                <a class="btn btn-html" href="{html_name}" target="_blank">🌐 Read HTML</a>
+                <a class="btn btn-code" href="https://github.com/healthearthack/Research" target="_blank">💻 View Code</a>
+            </div>
+        </div>
+        """)
+
+    index_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Earth Hack Research Laboratory &bull; Public Publications Portal</title>
+    <style>
+        * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }}
+        .container {{
+            max-width: 960px;
+            margin: 0 auto;
+        }}
+        header {{
+            border-bottom: 1px solid #334155;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }}
+        h1 {{
+            font-size: 26pt;
+            font-weight: 800;
+            color: #38bdf8;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }}
+        .lead {{
+            font-size: 11pt;
+            color: #94a3b8;
+        }}
+        .nav-links {{
+            margin-top: 14px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }}
+        .nav-links a {{
+            color: #38bdf8;
+            text-decoration: none;
+            font-size: 9.5pt;
+            font-weight: 600;
+        }}
+        .nav-links a:hover {{ text-decoration: underline; }}
+        .pub-card {{
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            transition: transform 0.15s ease, border-color 0.15s ease;
+        }}
+        .pub-card:hover {{
+            transform: translateY(-2px);
+            border-color: #38bdf8;
+        }}
+        .pub-badge {{
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: #38bdf8;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+        }}
+        .pub-title {{
+            font-size: 15pt;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }}
+        .pub-authors {{
+            font-size: 10pt;
+            color: #e2e8f0;
+            margin-bottom: 4px;
+        }}
+        .pub-affil {{
+            font-size: 9pt;
+            color: #94a3b8;
+            margin-bottom: 10px;
+        }}
+        .pub-target {{
+            font-size: 9pt;
+            color: #cbd5e1;
+            margin-bottom: 18px;
+        }}
+        .pub-actions {{
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }}
+        .btn {{
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 9.5pt;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }}
+        .btn:hover {{ opacity: 0.85; }}
+        .btn-pdf {{ background: #0284c7; color: #ffffff; }}
+        .btn-html {{ background: #334155; color: #f8fafc; }}
+        .btn-code {{ background: #10b981; color: #ffffff; }}
+        footer {{
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #334155;
+            font-size: 9pt;
+            color: #64748b;
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Health Earth Hack Research Laboratory</h1>
+            <p class="lead">Open-Access Working Papers, Preprints & Cyber-Physical GeoEnergy Systems</p>
+            <div class="nav-links">
+                <a href="https://scholar.google.com/citations" target="_blank">🎓 Google Scholar Profile</a>
+                <a href="https://github.com/healthearthack/Research" target="_blank">💻 GitHub Repository</a>
+                <a href="https://thepolka.cloud/forecast" target="_blank">🌐 Real-Time Forecast Portal</a>
+                <a href="http://website.oil:8000" target="_blank">🛢️ Wellbore SCADA Gateway (8000)</a>
+            </div>
+        </header>
+
+        <main>
+            {"".join(cards)}
+        </main>
+
+        <footer>
+            <p>Authored by Andrew C. Kieckhefer &bull; Department of Atmospheric and Oceanic Sciences (Alum), UW–Madison</p>
+            <p>Distributed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License.</p>
+        </footer>
+    </div>
+</body>
+</html>
+"""
+    with open(index_file, "w", encoding="utf-8") as f:
+        f.write(index_html)
+    print(f"[OK] Generated Public Portal: {index_file}")
 
 if __name__ == "__main__":
     build()
+
 
