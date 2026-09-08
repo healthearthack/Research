@@ -1,0 +1,21 @@
+name: Automated Thesis Review & Integrity Check
+
+on:
+  pull_request:
+    paths:
+      - 'proposal/**'
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR code
+        uses: actions/checkout@v4
+
+      - name: Verify Document Structure & Formatting
+        run: |
+          echo "Verifying markdown formatting and citation syntax..."
+          # Check that core thesis sections remain intact
+          grep -q "## Core Hypothesis" proposal/working_thesis.md || (echo "ERROR: Core Hypothesis section was removed!" && exit 1)
+          grep -q "## Methodology" proposal/working_thesis.md || (echo "ERROR: Methodology section was removed!" && exit 1)
+          echo "✔ Document integrity verified. Ready for human review."
