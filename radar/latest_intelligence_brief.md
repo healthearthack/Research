@@ -1,8 +1,8 @@
-# Junior Researcher Intelligence Briefing — 2026-10-19
+# Junior Researcher Intelligence Briefing — 2026-10-26
 *Autonomous Policy, Regulatory & Telemetry Radar for GeoEnergy Engineering*
 
 ## Executive Summary
-Automated intelligence scan executed on `2026-10-19` across federal registers, DOE geothermal bulletins, and CISA directives.
+Automated intelligence scan executed on `2026-10-26` across federal registers, DOE geothermal bulletins, and CISA directives.
 Total high-signal triggers cataloged: **1**
 
 ---
