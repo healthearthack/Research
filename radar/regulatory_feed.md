@@ -70,3 +70,12 @@
 ### DOE Geothermal Technologies
 
 
+## Automated Policy & Telemetry Ingest — 2026-11-09
+
+### Federal Register (Energy & Environment)
+
+### FERC Updates
+
+### DOE Geothermal Technologies
+
+
